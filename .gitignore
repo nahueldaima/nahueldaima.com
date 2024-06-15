@@ -16,3 +16,5 @@ package-lock.json
 .netlify
 
 .vscode
+
+dist

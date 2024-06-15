@@ -34,6 +34,9 @@ export default defineNuxtConfig({
         '/',
       ],
     },
+    output: {
+      publicDir: 'dist',
+    },
   },
 
   colorMode: {
