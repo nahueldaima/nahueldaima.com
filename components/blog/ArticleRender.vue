@@ -56,7 +56,7 @@ defineOgImageComponent('About', {
 </script>
 
 <template>
-  <div class="py-5">
+  <div class="py-5 px-7 sm:px-1">
     <div class="container mx-auto max-w-3xl mt-9 px-8">
       <BlogHeader
         :title="data.title" :image="data.image" :alt="data.alt" :date="data.date"

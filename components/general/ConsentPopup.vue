@@ -1,7 +1,7 @@
 <script setup>
 import { ref } from 'vue'
 
-const { gtag, enableAnalytics, disableAnalytics } = useGtag()
+const { gtag, enableAnalytics, disableAnalytics, initialize } = useGtag()
 
 const showPopup = ref(true)
 
@@ -12,16 +12,17 @@ function acceptConsent() {
 }
 
 function allConsentGranted() {
-  gtag('consent', 'update', {
-    ad_user_data: 'granted',
-    ad_personalization: 'granted',
-    ad_storage: 'granted',
-    analytics_storage: 'granted',
-  })
+  initialize()
 }
 
 function denyConsent() {
   disableAnalytics()
+  gtag('consent', 'update', {
+    ad_user_data: 'denied',
+    ad_personalization: 'denied',
+    ad_storage: 'denied',
+    analytics_storage: 'denied',
+  })
   showPopup.value = false
 }
 </script>

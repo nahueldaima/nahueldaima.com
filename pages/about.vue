@@ -11,9 +11,9 @@ onMounted(() => {
 })
 
 defineOgImageComponent('About', {
-  headline: 'About Nahuel Daima',
+  headline: 'Tech and Travel Blog',
   title: 'Nahuel Daima',
-  description: 'I’m Nahuel, a technology enthusiast and digital nomad with over a decade of experience in software',
+  description: 'I’m a technology enthusiast and digital nomad with over a decade of experience in software',
   link: '/nahuel-daima-home-hero.jpg',
 })
 </script>
