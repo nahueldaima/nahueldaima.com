@@ -110,7 +110,7 @@ defineOgImage({
       <div class="px-6 max-w-xl mx-auto mb-10">
         <input
           v-model="searchVal" :placeholder="$t('articles.search')" type="text"
-          class="text-lg border-b-2 border-b border-0 border-slate-100 dark:border-slate-500 block w-full dark:placeholder-white text-black dark:text-white dark:bg-transparent placeholder:text-black  border-gray-300   focus:border-none focus:ring focus:ring-transparent dark:focus:ring-transparent"
+          class="text-lg border-b-2 border-b border-0 border-slate-100 dark:border-slate-500 block w-full dark:placeholder-white text-black dark:text-white dark:bg-transparent placeholder:text-black  border-gray-300 focus:border-none focus:ring focus:ring-transparent dark:focus:ring-transparent"
         >
       </div>
 

@@ -2,9 +2,9 @@
 title: Tech Lorem Ipsum Dolor Sit Amet
 date: '2023-10-10'
 description: Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-image: /blogs-img/blog1.webp
+image: /blog1.webp
 alt: Lorem Ipsum Dolor Sit Amet
-ogImage: /blogs-img/blog1.webp
+ogImage: /blog1.webp
 tags: ['lorem', 'ipsum']
 equivalent: another-name
 published: true

@@ -12,7 +12,7 @@ defineOgImageComponent('About', {
     <div class="container mx-auto max-w-3xl mt-9">
       <!-- <div class="sm:grid grid-cols-8 px-6 py-5 sm:py-9 gap-5 container max-w-5xl  mx-auto"> -->
 
-      <h1 class="text-5xl sm:text-7xl uppercase pb-2 text-center dark:text-zinc-300">
+      <h1 class="text-5xl sm:text-7xl uppercase pb-2 text-center dark:text-white">
         {{ $t('mycv.title') }}
       </h1>
       <p class="text-base text-4xl sm:text-2xl pb-7 text-center sm:pb-12 font-normal text-zinc-500">
@@ -30,12 +30,12 @@ defineOgImageComponent('About', {
         </div>
         <div class="px-6 col-span-2">
           <h2
-            class="text-base sm:text-5xl text-5xl uppercase pb-4 sm:pb-6 text-black sm:text-left text-center dark:text-zinc-300"
+            class="text-base sm:text-5xl text-5xl uppercase pb-4 sm:pb-6 text-black sm:text-left text-center dark:text-white"
           >
             Bio
           </h2>
           <p
-            class="dark:text-zinc-300 text-xl text-center sm:text-justify font-normal font-content antialiased my-6"
+            class="dark:text-white text-xl text-center sm:text-justify font-normal font-content antialiased my-6"
             v-html="$t('mycv.bio')"
           />
         </div>
@@ -51,7 +51,7 @@ defineOgImageComponent('About', {
     <div class="container mx-auto max-w-5xl items-center min-h-screen content-center">
       <div class="px-6">
         <h2
-          class="text-base sm:text-5xl text-5xl uppercase pb-5 sm:pb-8 text-black dark:text-zinc-300 sm:text-left text-center"
+          class="text-base sm:text-5xl text-5xl uppercase pb-5 sm:pb-8 text-black dark:text-white sm:text-left text-center"
         >
           {{ $t('mycv.highlights') }}
         </h2>
@@ -65,12 +65,12 @@ defineOgImageComponent('About', {
         </div>
         <div class="px-6 col-span-4">
           <h3
-            class="text-base sm:text-3xl text-4xl uppercase pb-4 text-black dark:text-zinc-300 sm:text-left text-center "
+            class="text-base sm:text-3xl text-4xl uppercase pb-4 text-black dark:text-white sm:text-left text-center "
           >
             {{ $t('mycv.latestCompany') }}
           </h3>
           <h4
-            class="text-base sm:text-xl text-4xl uppercase pb-2 text-black text-zinc-600 dark:text-zinc-300 sm:text-left text-center"
+            class="text-base sm:text-xl text-4xl uppercase pb-2 text-black text-zinc-600 dark:text-white sm:text-left text-center"
           >
             {{ $t('mycv.latestPositionTitle') }}
           </h4>
@@ -78,7 +78,7 @@ defineOgImageComponent('About', {
             {{ $d('2019-05-25') }} - {{ $t('mycv.now') }}
           </p>
           <p
-            class="dark:text-zinc-300 text-xl text-center sm:text-justify font-normal font-content antialiased my-6"
+            class="dark:text-white text-xl text-center sm:text-justify font-normal font-content antialiased my-6"
             v-html="$t('mycv.latestPositionDescription')"
           />
         </div>
@@ -86,7 +86,7 @@ defineOgImageComponent('About', {
       <div class="px-6 grid grid-cols-1 sm:grid-cols-5 items-center mt-8">
         <div class="px-2 col-start-2 col-span-4">
           <h4
-            class="text-base sm:text-xl text-3xl uppercase pb-2 text-black text-zinc-600 dark:text-zinc-300 sm:text-left text-center"
+            class="text-base sm:text-xl text-3xl uppercase pb-2 text-black text-zinc-600 dark:text-white sm:text-left text-center"
           >
             {{ $t('mycv.previousPositionTitle') }}
           </h4>
@@ -94,7 +94,7 @@ defineOgImageComponent('About', {
             {{ $d('2021-03-21') }} - {{ $d('2022-10-21') }}
           </p>
           <p
-            class="dark:text-zinc-300 text-xl text-center sm:text-justify font-normal font-content antialiased my-6"
+            class="dark:text-white text-xl text-center sm:text-justify font-normal font-content antialiased my-6"
             v-html="$t('mycv.previousPositionDescription')"
           />
         </div>
@@ -102,7 +102,7 @@ defineOgImageComponent('About', {
       <div class="px-6 grid grid-cols-1 sm:grid-cols-5 items-center mt-8">
         <div class="px-2 col-start-2 col-span-4">
           <h4
-            class="text-base sm:text-xl text-3xl uppercase pb-2 text-black text-zinc-600 dark:text-zinc-300 sm:text-left text-center"
+            class="text-base sm:text-xl text-3xl uppercase pb-2 text-black text-zinc-600 dark:text-white sm:text-left text-center"
           >
             {{ $t('mycv.previousPositionTitle2') }}
           </h4>
@@ -110,7 +110,7 @@ defineOgImageComponent('About', {
             {{ $d('2019-05-25') }} - {{ $d('2021-03-21') }}
           </p>
           <p
-            class="dark:text-zinc-300 text-xl text-center sm:text-justify font-normal font-content antialiased my-6"
+            class="dark:text-white text-xl text-center sm:text-justify font-normal font-content antialiased my-6"
             v-html="$t('mycv.previousPositionDescription2')"
           />
         </div>
@@ -127,12 +127,12 @@ defineOgImageComponent('About', {
         </div>
         <div class="px-6 col-span-4">
           <h3
-            class="text-base sm:text-3xl text-4xl uppercase pb-4 text-black dark:text-zinc-300 sm:text-left text-center "
+            class="text-base sm:text-3xl text-4xl uppercase pb-4 text-black dark:text-white sm:text-left text-center "
           >
             {{ $t('mycv.previousCompany') }}
           </h3>
           <h4
-            class="text-base sm:text-xl text-4xl uppercase pb-2 text-black text-zinc-600 dark:text-zinc-300 sm:text-left text-center"
+            class="text-base sm:text-xl text-4xl uppercase pb-2 text-black text-zinc-600 dark:text-white sm:text-left text-center"
           >
             {{ $t('mycv.previousCompanyPositionTitle') }}
           </h4>
@@ -140,7 +140,7 @@ defineOgImageComponent('About', {
             {{ $d('2016-10-01') }} - {{ $d('2017-01-31') }}
           </p>
           <p
-            class="dark:text-zinc-300 text-xl text-center sm:text-justify font-normal font-content antialiased my-6"
+            class="dark:text-white text-xl text-center sm:text-justify font-normal font-content antialiased my-6"
             v-html="$t('mycv.previousCompanyPositionDescription')"
           />
         </div>
@@ -157,12 +157,12 @@ defineOgImageComponent('About', {
         </div>
         <div class="px-6 col-span-4">
           <h3
-            class="text-base sm:text-3xl text-4xl uppercase pb-4 text-black dark:text-zinc-300 sm:text-left text-center "
+            class="text-base sm:text-3xl text-4xl uppercase pb-4 text-black dark:text-white sm:text-left text-center "
           >
             {{ $t('mycv.previousCompany2') }}
           </h3>
           <h4
-            class="text-base sm:text-xl text-4xl uppercase pb-2 text-black text-zinc-600 dark:text-zinc-300 sm:text-left text-center"
+            class="text-base sm:text-xl text-4xl uppercase pb-2 text-black text-zinc-600 dark:text-white sm:text-left text-center"
           >
             {{ $t('mycv.previousCompanyPositionTitle2') }}
           </h4>
@@ -170,7 +170,7 @@ defineOgImageComponent('About', {
             {{ $d('2023-02-10') }} - {{ $t('mycv.now') }}
           </p>
           <p
-            class="dark:text-zinc-300 text-xl text-center sm:text-justify font-normal font-content antialiased my-6"
+            class="dark:text-white text-xl text-center sm:text-justify font-normal font-content antialiased my-6"
             v-html="$t('mycv.previousCompanyPositionDescription2')"
           />
         </div>
@@ -187,12 +187,12 @@ defineOgImageComponent('About', {
         </div>
         <div class="px-6 col-span-4">
           <h3
-            class="text-base sm:text-3xl text-4xl uppercase pb-4 text-black dark:text-zinc-300 sm:text-left text-center "
+            class="text-base sm:text-3xl text-4xl uppercase pb-4 text-black dark:text-white sm:text-left text-center "
           >
             {{ $t('mycv.previousCompany3') }}
           </h3>
           <h4
-            class="text-base sm:text-xl text-4xl uppercase pb-2 text-black text-zinc-600 dark:text-zinc-300 sm:text-left text-center"
+            class="text-base sm:text-xl text-4xl uppercase pb-2 text-black text-zinc-600 dark:text-white sm:text-left text-center"
           >
             {{ $t('mycv.previousCompanyPositionTitle3') }}
           </h4>
@@ -200,7 +200,7 @@ defineOgImageComponent('About', {
             {{ $d('2016-10-01') }} - {{ $d('2019-01-31') }}
           </p>
           <p
-            class="dark:text-zinc-300 text-xl text-center sm:text-justify font-normal font-content antialiased my-6"
+            class="dark:text-white text-xl text-center sm:text-justify font-normal font-content antialiased my-6"
             v-html="$t('mycv.previousCompanyPositionDescription3')"
           />
         </div>

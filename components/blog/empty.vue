@@ -7,7 +7,7 @@
         <GeneralConfused />
       </div>
       <div class="p-5">
-        <h2 class="text-3xl font-semibold text-black dark:text-zinc-300 pb-1 group-hover:text-sky-700 dark:group-hover:text-sky-400">
+        <h2 class="text-3xl font-semibold text-black dark:text-white pb-1 group-hover:text-sky-700 dark:group-hover:text-sky-400">
           No Post Available
         </h2>
 

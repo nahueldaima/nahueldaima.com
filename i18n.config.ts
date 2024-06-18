@@ -15,7 +15,7 @@ export default defineI18nConfig(() => ({
         link: 'My CV',
         title: 'NAHUEL DAIMA',
         subtitle: 'CTO at Tookane: Logistics Management Software',
-        bio: 'I have extensive experience in Leadership and Development for startups.<br>I am flexible and strongly committed to enhancing the projects I participate in. I have a great Entrepreneurial spirit!<br>I bring experience in Team Management, Project Leadership, Sales, Communication, Optimization of production processes, ISO Standards Certification, among others.<br>I enjoy and practice R&D+i daily on the projects I carry out.<br><b>Today, programming has become my main passion!</b>',
+        bio: 'I have extensive experience in leadership and development for startups, with a strong commitment to enhancing the projects I participate in. <br>My entrepreneurial spirit drives me to excel in team management, project leadership, sales, communication, and optimization of production processes, including ISO standards certification. <br>I enjoy and practice R&D+i daily in the projects I undertake. Today, programming has become my main passion!<br><br><b>Today, programming has become my main passion!</b>',
         highlights: 'Highlights',
         now: 'current date',
         latestCompany: 'Tookane - Logistics Management Software',

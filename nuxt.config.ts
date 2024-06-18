@@ -39,6 +39,17 @@ export default defineNuxtConfig({
     },
   },
 
+  image: {
+    providers: {
+      s3: {
+        provider: '~/providers/s3-provider.ts',
+        options: {
+          baseURL: process.env.IMAGES_BASE_URL,
+        },
+      },
+    },
+  },
+
   colorMode: {
     classSuffix: '',
     preference: 'dark',

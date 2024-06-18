@@ -10,12 +10,12 @@
         />
       </div>
       <div class="px-6">
-        <h1 class="text-center md:text-left text-black dark:text-zinc-300 leading-10 sm:leading-7 font-heading antialiased font-medium leading-tight text-4xl md:text-6xl my-5">
+        <h1 class="text-center md:text-left text-black dark:text-white leading-10 sm:leading-7 font-heading antialiased font-medium leading-tight text-4xl md:text-6xl my-5">
           {{ $t('homePage.title') }}
           <br>
           {{ $t('homePage.title2') }}
         </h1>
-        <p class="dark:text-zinc-300 text-xl font-normal font-content antialiased my-6">
+        <p class="dark:text-white text-xl font-normal font-content antialiased my-6">
           {{ $t('homePage.description') }}
         </p>
         <div class="flex md:justify-end md:mr-6 pt-6 justify-center">

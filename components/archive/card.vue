@@ -31,23 +31,24 @@ withDefaults(defineProps<Props>(), {
         <NuxtImg
           class="absolute inset-0 h-full w-full object-cover object-center transition-all duration-500 group-hover:scale-[1.10]"
           :src="image"
+          provider="s3"
           :alt="alt"
         />
         <div class="absolute top-4 left-4 text-white">
           <!-- <div class="bg-black bg-opacity-50 px-2 py-1 rounded text-sm font-thin"> -->
-          <div class="px-2 py-1 rounded text-sm font-thin">
+          <div class="px-2 py-1 rounded text-sm font-thin bg-black bg-opacity-50">
             {{ $d(date) }}
           </div>
         </div>
         <div class="absolute bottom-4 left-4 text-white">
-          <h2 class="text-2xl">
+          <h2 class="text-3xl bg-black bg-opacity-50 rounded px-2">
             {{ title }}
           </h2>
         </div>
       </div>
     </NuxtLink>
   </article>
-  <!-- <article class="group border dark:border-gray-800  m-2 rounded-2xl overflow-hidden shadow-sm text-zinc-700 dark:text-zinc-300  ">
+  <!-- <article class="group border dark:border-gray-800  m-2 rounded-2xl overflow-hidden shadow-sm text-zinc-700 dark:text-white  ">
     <NuxtLink :to="path" class="grid grid-cols-1 sm:grid-cols-10 gap-1">
       <div class="sm:col-span-3">
         <NuxtImg
@@ -58,13 +59,13 @@ withDefaults(defineProps<Props>(), {
         />
       </div>
       <div class="sm:col-span-7 p-5">
-        <h2 class="text-xl font-semibold text-black dark:text-zinc-300   pb-1 group-hover:text-sky-700 dark:group-hover:text-sky-400">
+        <h2 class="text-xl font-semibold text-black dark:text-white   pb-1 group-hover:text-sky-700 dark:group-hover:text-sky-400">
           {{ title }}
         </h2>
         <p class="text-ellipsis line-clamp-2">
           {{ description }}
         </p>
-        <div class="text-black dark:text-zinc-300   text-sm mt-2 mb-1 md:flex md:space-x-6">
+        <div class="text-black dark:text-white   text-sm mt-2 mb-1 md:flex md:space-x-6">
           <div class="flex items-center">
             <GeneralDate />
             <p> {{ date }}</p>

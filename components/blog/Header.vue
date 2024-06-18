@@ -23,15 +23,15 @@ withDefaults(defineProps<Props>(), {
     <div class="mb-10">
       <div class="flex justify-between">
         <div>
-          <p class="text-center mb-2 font-thin">
+          <p class="text-center mb-2 font-thin dark:text-white">
             {{ $d(date) || '' }}
           </p>
-          <h1 class="text-4xl sm:text-6xl uppercase pb-2 text-center ">
+          <h1 class="text-4xl sm:text-6xl uppercase pb-2 text-center dark:text-white ">
             {{ title || '' }}
           </h1>
         </div>
       </div>
-      <h3 class="font-content text-md sm:text-xl pb-7 text-center sm:pb-1">
+      <h3 class="font-content text-md sm:text-xl pb-7 text-center sm:pb-1 dark:text-white">
         {{ description || '' }}
       </h3>
     </div>

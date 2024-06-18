@@ -10,7 +10,7 @@ useHead({
 </script>
 
 <template>
-  <div class="bg-[#FFFFFF] dark:text-zinc-300 dark:bg-slate-950">
+  <div class="bg-[#FFFFFF] dark:text-white dark:bg-slate-950">
     <GeneralConsentPopup />
     <NuxtLoadingIndicator />
     <NuxtLayout>

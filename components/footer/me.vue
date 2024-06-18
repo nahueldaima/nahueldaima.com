@@ -7,10 +7,10 @@
       loading="lazy"
       quality="50"
     />
-    <!-- <p class="text-black dark:text-zinc-300   text-2xl py-1 font-semibold">
+    <!-- <p class="text-black dark:text-white   text-2xl py-1 font-semibold">
       {{ footerData.author }}
     </p> -->
-    <p class="py-2 dark:text-zinc-300  ">
+    <p class="py-2 dark:text-white  ">
       {{ $t('footerData.aboutAuthor') }}
     </p>
     <div class="my-1 pb-3">
