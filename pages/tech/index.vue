@@ -7,6 +7,7 @@ const { data } = await useAsyncData('recent-post', () =>
 
 <template>
   <BlogArticles
+    :key="locale"
     :all-articles="data"
     :locale="locale"
     :title="$t('tech.title')"
