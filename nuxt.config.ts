@@ -72,11 +72,11 @@ export default defineNuxtConfig({
     'nuxt-gtag',
   ],
 
-  // content: {
-  //   highlight: {
-  //     theme: 'dracula',
-  //   }
-  // },
+  content: {
+    markdown: {
+      anchorLinks: false,
+    },
+  },
 
   i18n: {
     baseUrl: 'https://nahueldaima.com',

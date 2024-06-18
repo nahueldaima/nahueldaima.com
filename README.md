@@ -101,3 +101,7 @@ Distributed under the MIT License. See `LICENSE` for more information.
 Nahuel Daima - [LinkedIn](https://www.linkedin.com/in/nahueldaima/?locale=en_US) - [Twitter](https://x.com/leodaima)
 
 Project Link: [https://github.com/nahueldaima/nahueldaima.com](https://github.com/nahueldaima/nahueldaima.com)
+
+## Some shortcuts
+
+On MD if I want to open a link to a page on the same tab: `<ProseA href="https://example.com" target="_self">Example</ProseA>`

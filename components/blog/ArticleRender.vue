@@ -65,7 +65,7 @@ defineOgImageComponent('About', {
     </div>
     <div class="container mx-auto max-w-4xl mt-9">
       <div
-        class="font-content text-lg text-justify prose prose-zinc dark:text-white dark:prose-invert prose-h1:no-underline prose-h2:no-underline prose-h3:no-underline prose-h4:no-underline prose-a:no-underline prose-h1:font-heading prose-h2:font-heading prose-h3:font-heading prose-h4:font-heading prose-h1:font-normal prose !max-w-none"
+        class="font-content text-lg text-justify prose prose-zinc dark:text-white dark:prose-invert prose-h1:no-underline prose-h2:no-underline prose-h3:no-underline prose-h4:no-underline prose-a:text-zinc-600 dark:prose-a:text-zinc-200 prose-h1:font-heading prose-h2:font-heading prose-h3:font-heading prose-h4:font-heading prose-h1:font-normal prose !max-w-none"
       >
         <ContentRenderer v-if="articles" :value="articles" class="w-full">
           <template #empty>
