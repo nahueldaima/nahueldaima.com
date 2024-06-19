@@ -48,12 +48,12 @@ useHead({
   link: [{ rel: 'canonical', href: `https://nahueldaima.com${props.path}` }],
 })
 
-defineOgImageComponent('About', {
-  headline: data.value.title || '',
-  title: data.value.title || '',
-  description: data.value.description || '',
-  link: data.value.ogImage,
-})
+// defineOgImageComponent('About', {
+//   headline: data.value.title || '',
+//   title: data.value.title || '',
+//   description: data.value.description || '',
+//   link: data.value.ogImage,
+// })
 </script>
 
 <template>
