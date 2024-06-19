@@ -14,7 +14,7 @@ interface Props {
 withDefaults(defineProps<Props>(), {
   path: '/',
   title: 'no-title',
-  date: 'no-date',
+  date: '2024-01-01',
   description: 'no-description',
   image: '/blogs-img/blog.jpg',
   alt: 'no-alt',

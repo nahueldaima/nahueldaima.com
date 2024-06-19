@@ -3,6 +3,7 @@ const props = defineProps({
   allArticles: {
     type: Array,
     required: true,
+    default: () => [],
   },
   locale: {
     type: String,
@@ -27,6 +28,8 @@ const pageNumber = ref(1)
 const searchVal = ref('')
 
 const formattedData = computed(() => {
+  if (!props.allArticles || !props.allArticles.length)
+    return []
   return props.allArticles.map((articles) => {
     // remove language from articles._path
     articles._path = articles._path.replace(`/${props.locale}/`, '')
