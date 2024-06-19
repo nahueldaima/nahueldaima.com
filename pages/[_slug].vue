@@ -26,7 +26,7 @@ const data = computed<BlogPost>(() => {
     image: articles.value?.image || '/not-found.jpg',
     alt: articles.value?.alt || 'no alter data available',
     ogImage: articles.value?.ogImage || '/not-found.jpg',
-    date: articles.value?.date || 'not-date-available',
+    date: articles.value?.date || '2024-01-01',
     tags: articles.value?.tags || [],
     published: articles.value?.published || false,
   }
@@ -41,11 +41,11 @@ useHead({
       content: data.value.description,
     },
     // Test on: https://developers.facebook.com/tools/debug/ or https://socialsharepreview.com/
-    { property: 'og:site_name', content: 'Riyad\'s Blog' },
+    { property: 'og:site_name', content: 'Nahuel Daima' },
     { hid: 'og:type', property: 'og:type', content: 'website' },
     {
       property: 'og:url',
-      content: `https://blog-nurriyad.vercel.app/${route.path}`,
+      content: `https://nahueldaima.com/${route.path}`,
     },
     {
       property: 'og:title',
@@ -60,11 +60,11 @@ useHead({
       content: data.value.ogImage || data.value.image,
     },
     // Test on: https://cards-dev.twitter.com/validator or https://socialsharepreview.com/
-    { name: 'twitter:site', content: '@qdnvubp' },
+    { name: 'twitter:site', content: '@leodaima' },
     { name: 'twitter:card', content: 'summary_large_image' },
     {
       name: 'twitter:url',
-      content: `https://blog-nurriyad.vercel.app/${route.path}`,
+      content: `https://nahueldaima.com/${route.path}`,
     },
     {
       name: 'twitter:title',
@@ -82,14 +82,14 @@ useHead({
   link: [
     {
       rel: 'canonical',
-      href: `https://blog-nurriyad.vercel.app/${route.path}`,
+      href: `https://nahueldaima.com/${route.path}`,
     },
   ],
 })
 
 // Generate OG Image
-defineOgImageComponent('Test', {
-  headline: 'Greetings 👋',
+defineOgImageComponent('About', {
+  headline: 'Nahuel Daima - Digital Nomad',
   title: data.value.title || '',
   description: data.value.description || '',
   link: data.value.ogImage,

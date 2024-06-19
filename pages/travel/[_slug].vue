@@ -22,5 +22,5 @@ if (error && error.value) {
 </script>
 
 <template>
-  <BlogArticleRender :articles="articles" path="route.path" />
+  <BlogArticleRender :articles="articles" :path="route.path" />
 </template>
