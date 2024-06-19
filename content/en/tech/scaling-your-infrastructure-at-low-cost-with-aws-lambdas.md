@@ -4,7 +4,7 @@ date: '2024-06-18'
 description: We started working with microservices four years ago. Today, we have over 200 of them performing various critical business processes, but the path had a few bumps.
 image: /the-first-step-to-scaling-your-infrastructure-at-low-cost-nahuel-daima.jpg 
 alt: The First Step to Scaling Your Infrastructure at Low Cost With AWS Lambdas
-ogImage: /the-first-step-to-scaling-your-infrastructure-at-low-cost-nahuel-daima.jpg 
+ogImage: the-first-step-to-scaling-your-infrastructure-at-low-cost-nahuel-daima.jpg 
 tags: ['devops', 'aws']
 equivalent: escalar-infraestructura-a-bajo-costo-con-aws-lambdas
 published: true

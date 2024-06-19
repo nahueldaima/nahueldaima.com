@@ -4,7 +4,7 @@ date: '2024-06-17'
 description: 'La vida de un nómada digital dista mucho de la imagen idealizada de trabajar en una playa paradisíaca en Bali. No es para todos. ¿Ya lo intentaste?'
 image: /lessons-from-a-digital-nomad-nahuel-daima.jpg
 alt: 'Lecciones de Nahuel Daima como Nómada Digital'
-ogImage: /lessons-from-a-digital-nomad-nahuel-daima.jpg
+ogImage: lessons-from-a-digital-nomad-nahuel-daima.jpg
 tags: ['nomad', 'thoughts']
 equivalent: 'lessons-from-a-digital-nomad'
 published: true

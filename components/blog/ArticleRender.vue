@@ -43,7 +43,7 @@ useHead({
     { name: 'twitter:url', content: `https://nahueldaima.com${props.path}` },
     { name: 'twitter:title', content: data.value.title },
     { name: 'twitter:description', content: data.value.description },
-    { name: 'twitter:image', content: data.value.ogImage || data.value.image },
+    { name: 'twitter:image', content: process.env.IMAGES_BASE_URL + data.value.ogImage },
   ],
   link: [{ rel: 'canonical', href: `https://nahueldaima.com${props.path}` }],
 })

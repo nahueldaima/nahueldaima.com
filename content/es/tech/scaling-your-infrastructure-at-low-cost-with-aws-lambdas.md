@@ -4,7 +4,7 @@ date: '2024-06-18'
 description: Empezamos hace 4 años a trabajar con microservicios. Hoy tenemos más de 200 Lambdas que realizan diferentes tareas, pero el camino tuvo muchos desafíos.
 image: /the-first-step-to-scaling-your-infrastructure-at-low-cost-nahuel-daima.jpg 
 alt: El Primer Paso para Escalar tu Infraestructura a Bajo Costo con AWS Lambda
-ogImage: /the-first-step-to-scaling-your-infrastructure-at-low-cost-nahuel-daima.jpg 
+ogImage: the-first-step-to-scaling-your-infrastructure-at-low-cost-nahuel-daima.jpg 
 tags: ['devops', 'aws']
 equivalent: scaling-your-infrastructure-at-low-cost-with-aws-lambdas
 published: true
