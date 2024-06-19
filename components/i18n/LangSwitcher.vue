@@ -6,6 +6,8 @@ const { locale, locales } = useI18n()
 // Cast to avoid TypeScript errors in template
 const supportedLocales = locales.value
 
+const switchLocalePath = useSwitchLocalePath()
+
 const router = useRouter()
 
 const config = useRuntimeConfig()
@@ -18,8 +20,9 @@ const computedLocale = computed(() => {
 function onLocaleChanged(event: Event) {
   const target = event.target as HTMLInputElement
   // navigate user to the selected locale home page
-  const path = defaultLocale === target.value ? '/' : `/${target.value}`
-  router.push({ path })
+  // const path = defaultLocale === target.value ? '/' : `/${target.value}`
+  // router.push({ path })
+  router.push({ path: switchLocalePath(target.value) })
 }
 </script>
 

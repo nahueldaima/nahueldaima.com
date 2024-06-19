@@ -86,7 +86,10 @@ export default defineNuxtConfig({
     ],
     defaultLocale: 'en',
     strategy: 'prefix_except_default',
-    detectBrowserLanguage: false,
+    detectBrowserLanguage: {
+      useCookie: true,
+      cookieKey: 'i18n_redirected',
+    },
     vueI18n: './i18n.config.ts', // if you are using custom path, default
     customRoutes: 'config',
   },
