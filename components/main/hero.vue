@@ -3,8 +3,10 @@
     <div class="grid grid-cols-1 sm:grid-cols-2 items-center w-full max-w-screen-xl">
       <div class="px-6 justify-self-center h-[40vh] sm:h-[60vh] flex items-center">
         <NuxtImg
-          src="/nahuel-daima-home-hero.jpg" loading="lazy"
+          src="/nahuel-daima-home-hero.jpg"
           quality="50"
+          width="600"
+          height="auto"
           alt="Nahuel Daima"
           class="rounded-md h-full w-auto object-cover"
         />
