@@ -30,7 +30,7 @@ function onLocaleChanged(event: Event) {
   <div>
     <select
       v-model="computedLocale"
-      class="border-none dark:text-white focus:ring-0 dark:bg-transparent hover:cursor-pointer text-sm sm:text-lg bg-transparent appearance-none"
+      class="border-none dark:text-white focus:ring-0 dark:bg-black hover:cursor-pointer text-black text-sm sm:text-lg bg-white appearance-none"
       @change="onLocaleChanged"
     >
       <option v-for="loc in supportedLocales" :key="loc.code" :value="loc.code">
