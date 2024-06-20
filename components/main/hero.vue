@@ -8,7 +8,7 @@
           width="600"
           height="auto"
           alt="Nahuel Daima"
-          preload
+          loading="lazy"
           class="rounded-md h-full w-auto object-cover"
         />
       </div>
