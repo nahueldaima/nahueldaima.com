@@ -11,6 +11,11 @@ useHead({
   titleTemplate: 'Nahuel Daima - %s',
 })
 
+const router = useRouter()
+function goHome() {
+  router.push('/')
+}
+
 // Generate OG Image
 defineOgImageComponent('About', {
   headline: 'Tech and Travel Blog',
@@ -22,7 +27,9 @@ defineOgImageComponent('About', {
 
 <template>
   <main class="md:container md:mx-auto text-zinc-600">
-    <div class="dark:text-white text-black flex flex-col items-center justify-center mt-6 md:mt-0 md:h-[calc(100vh-500px)] w-full mb-8">
+    <div
+      class="dark:text-white text-black flex flex-col items-center justify-center mt-6 md:mt-0 md:h-[calc(100vh-500px)] w-full mb-8"
+    >
       <h1 class="text-4xl sm:text-7xl uppercase pb-2 text-center">
         {{ $t('confirmSubscription.title') }}
       </h1>
@@ -30,7 +37,7 @@ defineOgImageComponent('About', {
         {{ $t('confirmSubscription.description') }}
       </p>
       <div class="mt-4">
-        <generalButton @click="denyConsent">
+        <generalButton @click="goHome">
           {{ $t('confirmSubscription.button') }}
         </generalButton>
       </div>
