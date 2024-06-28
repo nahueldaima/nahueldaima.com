@@ -1,6 +1,6 @@
 <script setup lang="ts">
 // Get active locale and supported locales
-import { useRuntimeConfig } from '#app'
+// import { useRuntimeConfig } from '#app'
 
 const { locale, locales } = useI18n()
 // Cast to avoid TypeScript errors in template
@@ -10,8 +10,8 @@ const switchLocalePath = useSwitchLocalePath()
 
 const router = useRouter()
 
-const config = useRuntimeConfig()
-const defaultLocale = config?.i18n?.defaultLocale || 'en'
+// const config = useRuntimeConfig()
+// const defaultLocale = config?.i18n?.defaultLocale || 'en'
 
 const computedLocale = computed(() => {
   return locale.value

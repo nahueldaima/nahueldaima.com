@@ -28,6 +28,7 @@ export default defineNuxtConfig({
       crawlLinks: true,
       routes: [
         '/',
+        '/rss.xml',
       ],
     },
     output: {

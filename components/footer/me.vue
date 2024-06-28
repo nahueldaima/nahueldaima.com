@@ -38,6 +38,14 @@
       >
         <Icon name="fa:twitter-square" size="1em" />
       </NuxtLink>
+      <NuxtLink
+        to="/rss.xml"
+        target="_blank"
+        class="p-2 text-gray-800 rounded-md  dark:text-[#F1F2F4]"
+        aria-label="X"
+      >
+        <Icon name="fa:rss" size="1em" />
+      </NuxtLink>
     </div>
   </div>
 </template>
