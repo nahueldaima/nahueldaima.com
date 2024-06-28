@@ -12,6 +12,7 @@ useHead({
 <template>
   <div class="bg-[#FFFFFF] dark:text-white dark:bg-slate-950">
     <GeneralConsentPopup />
+    <ComunityConvertKitSignupForm />
     <NuxtLoadingIndicator />
     <NuxtLayout>
       <NuxtPage />

@@ -71,6 +71,11 @@ export default defineI18nConfig(() => ({
         deny: 'Deny',
         accept: 'Accept',
       },
+      confirmSubscription: {
+        title: 'Subscription confirmed',
+        description: 'Thank you for subscribing to my newsletter!',
+        button: 'Checkout the news!',
+      },
     },
     es: {
       welcome: 'Bienvenido',
@@ -141,6 +146,11 @@ export default defineI18nConfig(() => ({
         description: 'Utilizamos cookies para personalizar contenido y anuncios, proporcionar funciones de redes sociales y analizar nuestro tráfico. ¿Consiente el uso de cookies para estos fines?',
         deny: 'Rechazar',
         accept: 'Aceptar',
+      },
+      confirmSubscription: {
+        title: 'Suscripción confirmada',
+        description: '¡Gracias por suscribirte a mi newsletter!',
+        button: '¡Revisa las novedades!',
       },
     },
   },
