@@ -1,22 +1,35 @@
 <script setup lang="ts">
-const { path } = useRoute()
-const articles = await queryContent(path).findOne()
+defineProps({
+  links: {
+    type: Array,
+    default: () => [],
+  },
+})
 
-const links = articles?.body?.toc?.links || []
+const isOpen = ref(false)
 </script>
 
 <template>
-  <div class="lg:col-span-3 sticky top-28 h-96  hidden lg:block  justify-self-end">
-    <div class="border dark:border-gray-800 p-3 rounded-md min-w-[200px] dark:bg-slate-900">
-      <h1 class="text-sm font-bold mb-3 border-b dark:border-gray-800 pb-2">
-        Table Of Content
-      </h1>
-      <NuxtLink
-        v-for="link in links" :key="link.id" :to="`#${link.id}`"
-        class="block text-xs mb-3 hover:underline"
+  <div v-show="links && links.length" class="flex justify-center items-center">
+    <div class="p-1">
+      <h3
+        class="mb-3 pb-2 cursor-pointer font-content text-sm sm:text-xs text-center sm:pb-1 dark:text-white"
+        @click="isOpen = !isOpen"
       >
-        {{ link.text }}
-      </NuxtLink>
+        {{ $t('articles.tableOfContents') }}
+        <Icon
+          name="mdi:chevron-down" size="20"
+          :class="{ 'rotate-180': isOpen }"
+        />
+      </h3>
+      <div v-if="isOpen" class="mt-2">
+        <NuxtLink
+          v-for="link in links" :key="link.id" :to="`#${link.id}`"
+          class="sm:text-lg text-xl block text-center text-sm mb-5 sm:mb-2 hover:underline"
+        >
+          {{ link.text }}
+        </NuxtLink>
+      </div>
     </div>
   </div>
 </template>

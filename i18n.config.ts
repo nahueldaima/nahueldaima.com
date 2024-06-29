@@ -64,6 +64,7 @@ export default defineI18nConfig(() => ({
       },
       articles: {
         search: 'Search',
+        tableOfContents: 'Table of contents',
       },
       cookies: {
         title: 'Cookie Consent',
@@ -120,6 +121,7 @@ export default defineI18nConfig(() => ({
       },
       articles: {
         search: 'Buscar',
+        tableOfContents: 'Tabla de contenidos',
       },
       tech: {
         link: 'Tech',
