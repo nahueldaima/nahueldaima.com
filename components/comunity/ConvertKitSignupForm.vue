@@ -1,31 +1,35 @@
 <script setup>
-import { onMounted, ref } from 'vue'
-
 const { locale } = useI18n()
 
 const convertKitContainer = ref(null)
+let currentScript = null
 
 function setupConvertKit() {
-  const script = document.createElement('script')
   const scriptValue = locale.value === 'en' ? 'ba0d8bc4f0' : '1b7a2eaa61'
+
+  // Remove the existing script if any
+  if (currentScript) {
+    currentScript.remove()
+    currentScript = null
+  }
+
+  // Create a new script element
+  const script = document.createElement('script')
   script.src = `https://nahueldaima.ck.page/${scriptValue}/index.js`
   script.async = true
   script.setAttribute('data-uid', scriptValue)
 
+  // Append the script to the container
   convertKitContainer.value.appendChild(script)
+  currentScript = script
 }
 
 onMounted(() => {
   setupConvertKit()
 })
 
-// add watcher of locale
+// Watch for changes in locale
 watch(locale, () => {
-  // check if previous script exists => remove it
-  const previousScript = document.querySelector('script[data-uid]')
-  if (previousScript)
-    previousScript.remove()
-
   setupConvertKit()
 })
 </script>
