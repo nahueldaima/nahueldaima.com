@@ -4,7 +4,7 @@ const { locale } = useI18n()
 const key = ref(Math.random().toString(36).substring(7))
 
 const { data: articles, error, refresh } = await useAsyncData('travel-post', () => {
-  return queryContent(`/${locale.value}/travel/`).limit(3).sort({ _id: -1 }).find()
+  return queryContent(`/${locale.value}/travel/`).limit(3).sort({ date: -1 }).find()
 },
 {
   watch: [key],
