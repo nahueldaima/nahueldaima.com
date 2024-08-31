@@ -11,6 +11,7 @@ export default defineNuxtConfig({
     pageTransition: { name: 'page', mode: 'out-in' },
     layoutTransition: { name: 'layout', mode: 'out-in' },
   },
+
   site: {
     url: 'https://nahueldaima.com',
     identity: {
@@ -66,6 +67,7 @@ export default defineNuxtConfig({
     '@stefanobartoletti/nuxt-social-share',
     '@nuxtjs/i18n',
     'nuxt-gtag',
+    '@nuxtjs/sitemap',
   ],
 
   content: {
@@ -102,4 +104,5 @@ export default defineNuxtConfig({
       }],
     ],
   },
+  compatibilityDate: '2024-08-31',
 })

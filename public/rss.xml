@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <title><![CDATA[Nahuel Daima]]></title>
+        <description><![CDATA[Hi! I’m Nahuel Daima, Digital nomad and technology enthusiast]]></description>
+        <link>https://nahueldaima.com</link>
+        <generator>RSS for Node</generator>
+        <lastBuildDate>Sat, 31 Aug 2024 16:37:12 GMT</lastBuildDate>
+        <atom:link href="https://nahueldaima.com/rss.xml" rel="self" type="application/rss+xml"/>
+        <language><![CDATA[en]]></language>
+        <item>
+            <title><![CDATA[Don't Travel to Israel on a Friday]]></title>
+            <description><![CDATA[Landing during Shabbat: a story of what not to do.]]></description>
+            <link>https://nahueldaima.com/en/travel/dont-travel-to-israel-on-a-friday</link>
+            <guid isPermaLink="true">https://nahueldaima.com/en/travel/dont-travel-to-israel-on-a-friday</guid>
+            <pubDate>Sat, 03 Aug 2024 00:00:00 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[Avoid Chaos on Your Next Trip: Proven Strategies for Digital Nomads]]></title>
+            <description><![CDATA[Traveling and working at the same time requires attention to details that we usually overlook. Here are the steps I follow every time I organize my trips.]]></description>
+            <link>https://nahueldaima.com/en/travel/proven-strategies-for-digitial-nomads</link>
+            <guid isPermaLink="true">https://nahueldaima.com/en/travel/proven-strategies-for-digitial-nomads</guid>
+            <pubDate>Sat, 29 Jun 2024 00:00:00 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[AWS Lambdas and Microservices: The First Step to Scaling Your Infrastructure at Low Cost]]></title>
+            <description><![CDATA[We started working with microservices four years ago. Today, we have over 200 of them performing various critical business processes, but the path had a few bumps.]]></description>
+            <link>https://nahueldaima.com/en/tech/scaling-your-infrastructure-at-low-cost-with-aws-lambdas</link>
+            <guid isPermaLink="true">https://nahueldaima.com/en/tech/scaling-your-infrastructure-at-low-cost-with-aws-lambdas</guid>
+            <pubDate>Tue, 18 Jun 2024 00:00:00 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[Four Years of Traveling the World: Lessons I Learned as a Digital Nomad]]></title>
+            <description><![CDATA[The life of a digital nomad is far from the idealised image of working on a paradise beach in Bali. Is not for everyone. Would you dare to try it?]]></description>
+            <link>https://nahueldaima.com/en/travel/lessons-from-a-digital-nomad</link>
+            <guid isPermaLink="true">https://nahueldaima.com/en/travel/lessons-from-a-digital-nomad</guid>
+            <pubDate>Mon, 17 Jun 2024 00:00:00 GMT</pubDate>
+        </item>
+    </channel>
+</rss>
