@@ -14,6 +14,7 @@ export default defineNuxtConfig({
 
   site: {
     url: 'https://nahueldaima.com',
+    name: 'Nahuel Daima',
     identity: {
       type: 'Person',
     },
@@ -29,7 +30,6 @@ export default defineNuxtConfig({
       crawlLinks: true,
       routes: [
         '/',
-        '/rss.xml',
       ],
     },
     output: {
@@ -69,6 +69,10 @@ export default defineNuxtConfig({
     'nuxt-gtag',
     '@nuxtjs/sitemap',
   ],
+
+  sitemap: {
+    strictNuxtContentPaths: true
+  },
 
   content: {
     markdown: {
