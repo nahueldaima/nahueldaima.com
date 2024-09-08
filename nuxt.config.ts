@@ -87,7 +87,7 @@ export default defineNuxtConfig({
       { code: 'es', iso: 'es-ES', dir: 'ltr', name: 'Español' },
     ],
     defaultLocale: 'en',
-    strategy: 'prefix_except_default',
+    strategy: 'prefix',
     detectBrowserLanguage: {
       useCookie: true,
       cookieKey: 'i18n_redirected',
@@ -109,4 +109,30 @@ export default defineNuxtConfig({
     ],
   },
   compatibilityDate: '2024-08-31',
+  routeRules: {
+    "/tech/scaling-your-infrastructure-at-low-cost-with-aws-lambdas": {
+      redirect: {
+        to: "/en/tech/scaling-your-infrastructure-at-low-cost-with-aws-lambdas",
+        statusCode: 301,
+      },
+    },
+    "/travel/dont-travel-to-israel-on-a-friday": {
+      redirect: {
+        to: "/en/travel/dont-travel-to-israel-on-a-friday",
+        statusCode: 301,
+      },
+    },
+    "/travel/lessons-from-a-digital-nomad": {
+      redirect: {
+        to: "/en/travel/lessons-from-a-digital-nomad",
+        statusCode: 301,
+      },
+    },
+    "/travel/proven-strategies-for-digitial-nomads": {
+      redirect: {
+        to: "/en/travel/proven-strategies-for-digitial-nomads",
+        statusCode: 301,
+      },
+    },
+  },
 })

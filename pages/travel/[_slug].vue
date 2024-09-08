@@ -9,10 +9,10 @@ const config = useRuntimeConfig()
 const defaultLocale = config?.i18n?.defaultLocale || 'en'
 
 const { data: articles, error } = await useAsyncData(`travel-post-${route.path}`, () => {
-  if (locale.value !== defaultLocale)
+  // if (locale.value !== defaultLocale)
     return queryContent(`${route.path}`).findOne()
-  else
-    return queryContent(`/${locale.value}${route.path}`).findOne()
+  // else
+  //   return queryContent(`/${locale.value}${route.path}`).findOne()
 })
 
 if (error && error.value) {

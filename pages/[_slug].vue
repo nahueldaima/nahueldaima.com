@@ -10,10 +10,10 @@ const defaultLocale = config?.i18n?.defaultLocale || 'en'
 
 const { data: articles, error } = await useAsyncData(`blog-post-${route.path}`, () => {
   // return queryContent(`${route.path}`).findOne()
-  if (locale.value !== defaultLocale)
+  // if (locale.value !== defaultLocale)
     return queryContent(`${route.path}`).findOne()
-  else
-    return queryContent(`/${locale.value}${route.path}`).findOne()
+  // else
+  //   return queryContent(`/${locale.value}${route.path}`).findOne()
 })
 
 if (error && error.value)
