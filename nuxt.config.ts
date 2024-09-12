@@ -67,12 +67,12 @@ export default defineNuxtConfig({
     '@stefanobartoletti/nuxt-social-share',
     '@nuxtjs/i18n',
     'nuxt-gtag',
-    '@nuxtjs/sitemap',
+    // '@nuxtjs/sitemap',
   ],
 
-  sitemap: {
-    strictNuxtContentPaths: true
-  },
+  // sitemap: {
+  //   strictNuxtContentPaths: true
+  // },
 
   content: {
     markdown: {
