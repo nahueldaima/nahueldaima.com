@@ -1,83 +1,68 @@
-<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet type="text/xsl" href="/__sitemap__/style.xsl"?>
-<urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:video="http://www.google.com/schemas/sitemap-video/1.1" xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1" xmlns:news="http://www.google.com/schemas/sitemap-news/0.9" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd http://www.google.com/schemas/sitemap-image/1.1 http://www.google.com/schemas/sitemap-image/1.1/sitemap-image.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-    <url>
-        <loc>https://nahueldaima.com/</loc>
-        <xhtml:link rel="alternate" href="https://nahueldaima.com/" hreflang="x-default" />
-        <xhtml:link rel="alternate" href="https://nahueldaima.com/" hreflang="en-GB" />
-    </url>
-    <url>
-        <loc>https://nahueldaima.com/en</loc>
-        <xhtml:link rel="alternate" hreflang="en-GB" href="https://nahueldaima.com/en" />
-        <xhtml:link rel="alternate" hreflang="es-ES" href="https://nahueldaima.com/es" />
-        <xhtml:link rel="alternate" hreflang="x-default" href="https://nahueldaima.com/en" />
-        <xhtml:link rel="alternate" hreflang="en" href="https://nahueldaima.com/en" />
-        <xhtml:link rel="alternate" hreflang="es" href="https://nahueldaima.com/es" />
-        <image:image>
-            <image:loc>https://nahueldaima.com/_ipx/w_600&amp;amp;q_50/nahuel-daima-home-hero.jpg</image:loc>
-        </image:image>
-    </url>
-    <url>
-        <loc>https://nahueldaima.com/en/404</loc>
-        <xhtml:link rel="alternate" hreflang="en-GB" href="https://nahueldaima.com/en/404" />
-        <xhtml:link rel="alternate" hreflang="es-ES" href="https://nahueldaima.com/es/404" />
-        <xhtml:link rel="alternate" hreflang="x-default" href="https://nahueldaima.com/en/404" />
-        <xhtml:link rel="alternate" hreflang="en" href="https://nahueldaima.com/en/404" />
-        <xhtml:link rel="alternate" hreflang="es" href="https://nahueldaima.com/es/404" />
-    </url>
-    <url>
-        <loc>https://nahueldaima.com/en/about</loc>
-        <xhtml:link rel="alternate" hreflang="en-GB" href="https://nahueldaima.com/en/about" />
-        <xhtml:link rel="alternate" hreflang="es-ES" href="https://nahueldaima.com/es/about" />
-        <xhtml:link rel="alternate" hreflang="x-default" href="https://nahueldaima.com/en/about" />
-        <xhtml:link rel="alternate" hreflang="en" href="https://nahueldaima.com/en/about" />
-        <xhtml:link rel="alternate" hreflang="es" href="https://nahueldaima.com/es/about" />
-    </url>
-    <url>
-        <loc>https://nahueldaima.com/en/confirm-subscription</loc>
-        <xhtml:link rel="alternate" hreflang="en-GB" href="https://nahueldaima.com/en/confirm-subscription" />
-        <xhtml:link rel="alternate" hreflang="es-ES" href="https://nahueldaima.com/es/confirm-subscription" />
-        <xhtml:link rel="alternate" hreflang="x-default" href="https://nahueldaima.com/en/confirm-subscription" />
-        <xhtml:link rel="alternate" hreflang="en" href="https://nahueldaima.com/en/confirm-subscription" />
-        <xhtml:link rel="alternate" hreflang="es" href="https://nahueldaima.com/es/confirm-subscription" />
-    </url>
-    <url>
-        <loc>https://nahueldaima.com/en/cv</loc>
-        <xhtml:link rel="alternate" hreflang="en-GB" href="https://nahueldaima.com/en/cv" />
-        <xhtml:link rel="alternate" hreflang="es-ES" href="https://nahueldaima.com/es/cv" />
-        <xhtml:link rel="alternate" hreflang="x-default" href="https://nahueldaima.com/en/cv" />
-        <xhtml:link rel="alternate" hreflang="en" href="https://nahueldaima.com/en/cv" />
-        <xhtml:link rel="alternate" hreflang="es" href="https://nahueldaima.com/es/cv" />
-        <image:image>
-            <image:loc>https://nahueldaima.com/_ipx/q_50/nahuel-daima-profile-cv.jpg</image:loc>
-        </image:image>
-        <image:image>
-            <image:loc>https://nahueldaima.com/_ipx/q_50/nahuel-daima-tookane-vtlab.png</image:loc>
-        </image:image>
-        <image:image>
-            <image:loc>https://nahueldaima.com/_ipx/q_50/nahuel-daima-ycombinator.png</image:loc>
-        </image:image>
-        <image:image>
-            <image:loc>https://nahueldaima.com/_ipx/q_50/nahuel-daima-waleeto.png</image:loc>
-        </image:image>
-        <image:image>
-            <image:loc>https://nahueldaima.com/_ipx/q_50/nahuel-daima-shift-metrics.png</image:loc>
-        </image:image>
-    </url>
-    <url>
-        <loc>https://nahueldaima.com/en/tech</loc>
-        <xhtml:link rel="alternate" hreflang="en-GB" href="https://nahueldaima.com/en/tech" />
-        <xhtml:link rel="alternate" hreflang="es-ES" href="https://nahueldaima.com/es/tech" />
-        <xhtml:link rel="alternate" hreflang="x-default" href="https://nahueldaima.com/en/tech" />
-        <xhtml:link rel="alternate" hreflang="en" href="https://nahueldaima.com/en/tech" />
-        <xhtml:link rel="alternate" hreflang="es" href="https://nahueldaima.com/es/tech" />
-    </url>
-    <url>
-        <loc>https://nahueldaima.com/en/travel</loc>
-        <xhtml:link rel="alternate" hreflang="en-GB" href="https://nahueldaima.com/en/travel" />
-        <xhtml:link rel="alternate" hreflang="es-ES" href="https://nahueldaima.com/es/travel" />
-        <xhtml:link rel="alternate" hreflang="x-default" href="https://nahueldaima.com/en/travel" />
-        <xhtml:link rel="alternate" hreflang="en" href="https://nahueldaima.com/en/travel" />
-        <xhtml:link rel="alternate" hreflang="es" href="https://nahueldaima.com/es/travel" />
-    </url>
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  <url>
+    <loc>https://nahueldaima.com/</loc>
+    <lastmod>2023-06-15</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://nahueldaima.com/en/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://nahueldaima.com/es/" />
+  </url>
+  <url>
+    <loc>https://nahueldaima.com/en/tech/scaling-your-infrastructure-at-low-cost-with-aws-lambdas</loc>
+    <lastmod>2023-06-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://nahueldaima.com/en/tech/scaling-your-infrastructure-at-low-cost-with-aws-lambdas" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://nahueldaima.com/es/tech/scaling-your-infrastructure-at-low-cost-with-aws-lambdas" />
+  </url>
+  <url>
+    <loc>https://nahueldaima.com/en/travel/dont-travel-to-israel-on-a-friday</loc>
+    <lastmod>2023-06-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://nahueldaima.com/en/travel/dont-travel-to-israel-on-a-friday" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://nahueldaima.com/es/travel/dont-travel-to-israel-on-a-friday" />
+  </url>
+  <url>
+    <loc>https://nahueldaima.com/en/travel/lessons-from-a-digital-nomad</loc>
+    <lastmod>2023-06-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://nahueldaima.com/en/travel/lessons-from-a-digital-nomad" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://nahueldaima.com/es/travel/lessons-from-a-digital-nomad" />
+  </url>
+  <url>
+    <loc>https://nahueldaima.com/en/travel/proven-strategies-for-digitial-nomads</loc>
+    <lastmod>2023-06-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://nahueldaima.com/en/travel/proven-strategies-for-digitial-nomads" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://nahueldaima.com/es/travel/proven-strategies-for-digitial-nomads" />
+  </url>
+  <url>
+    <loc>https://nahueldaima.com/about</loc>
+    <lastmod>2023-06-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://nahueldaima.com/en/about" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://nahueldaima.com/es/about" />
+  </url>
+  <url>
+    <loc>https://nahueldaima.com/cv</loc>
+    <lastmod>2023-06-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://nahueldaima.com/en/cv" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://nahueldaima.com/es/cv" />
+  </url>
+  <url>
+    <loc>https://nahueldaima.com/contact</loc>
+    <lastmod>2023-06-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://nahueldaima.com/en/contact" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://nahueldaima.com/es/contact" />
+  </url>
 </urlset>
-<!-- XML Sitemap generated by @nuxtjs/sitemap v6.0.0-beta.5 at 2024-09-12T09:27:24.663Z -->

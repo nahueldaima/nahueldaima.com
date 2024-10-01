@@ -35,6 +35,7 @@ export default defineNuxtConfig({
     output: {
       publicDir: 'dist',
     },
+    preset: 'static', // Add this line to disable serverless functions
   },
 
   image: {
@@ -66,14 +67,8 @@ export default defineNuxtConfig({
     '@nuxtjs/tailwindcss',
     '@stefanobartoletti/nuxt-social-share',
     '@nuxtjs/i18n',
-    'nuxt-gtag',
-    // '@nuxtjs/sitemap',
+    'nuxt-gtag'
   ],
-
-  // sitemap: {
-  //   strictNuxtContentPaths: true
-  // },
-
   content: {
     markdown: {
       anchorLinks: false,
