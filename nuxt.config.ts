@@ -34,8 +34,7 @@ export default defineNuxtConfig({
     },
     output: {
       publicDir: 'dist',
-    },
-    preset: 'static', // Add this line to disable serverless functions
+    }
   },
 
   image: {
