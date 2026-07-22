@@ -1,11 +1,21 @@
 <script lang="ts" setup>
-// Get Last 6 Publish Post from the content/blog directory
-const { data } = await useAsyncData('trending-post', () =>
-  queryContent('/blogs').limit(3).sort({ _id: 1 }).find(),
-)
+// Hand-picked case studies for the homepage. Add a slug here to feature a new one.
+const CASE_STUDIES = [
+  'scaling-your-infrastructure-at-low-cost-with-aws-lambdas',
+]
+
+const { locale } = useI18n()
+
+const { data } = await useAsyncData(`selected-work-${locale.value}`, () => {
+  return Promise.all(
+    CASE_STUDIES.map(slug => queryContent(`/${locale.value}/tech/${slug}`).findOne()),
+  )
+}, {
+  watch: [locale],
+})
 
 const formattedData = computed(() => {
-  return data.value?.map((articles) => {
+  return (data.value || []).filter(Boolean).map((articles) => {
     return {
       path: articles._path,
       title: articles.title || 'no-title available',
@@ -19,30 +29,19 @@ const formattedData = computed(() => {
     }
   })
 })
-
-useHead({
-  title: 'Home',
-  meta: [
-    {
-      name: 'description',
-      content:
-        'Welcome To My Blog Site. Get Web Development, Javascript, Typescript, NodeJs, Vue, and Nuxt, Related Articles, Tips, Learning resources and more.',
-    },
-  ],
-  titleTemplate: 'Nahuel Daima - %s',
-})
 </script>
 
 <template>
-  <div class="px-4">
+  <div class="pb-10 px-4">
     <div class="flex flex-row items-center space-x-3 pt-5 pb-3">
-      <Icon name="mdi:star-three-points-outline" size="2em" class="text-black dark:text-white  " />
-      <h2 class="text-4xl font-semibold text-black dark:text-white  ">
-        Trending Post
+      <Icon name="mdi:star-three-points-outline" size="2em" class="text-black dark:text-white" />
+      <h2 class="text-4xl font-semibold text-black dark:text-white">
+        Selected Work
       </h2>
     </div>
-    <div class="grid grid-cols-1 ">
-      <template v-for="post in formattedData" :key="post.title">
+
+    <div class="grid grid-cols-1">
+      <template v-for="post in formattedData" :key="post.path">
         <ArchiveCard
           :path="post.path"
           :title="post.title"
@@ -54,9 +53,6 @@ useHead({
           :tags="post.tags"
           :published="post.published"
         />
-      </template>
-      <template v-if="data?.length === 0">
-        <BlogEmpty />
       </template>
     </div>
   </div>

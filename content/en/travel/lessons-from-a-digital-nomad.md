@@ -7,7 +7,7 @@ alt: 'Lessons from Nahuel Daima as Digital Nomad'
 ogImage: lessons-from-a-digital-nomad-nahuel-daima.jpg
 tags: ['nomad', 'thoughts']
 equivalent: 'lecciones-de-un-nomada-digital'
-published: true
+published: false
 ---
 
 All my belongings are stored in two suitcases in a storage unit in Milan.

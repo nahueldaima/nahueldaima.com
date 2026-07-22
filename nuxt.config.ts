@@ -58,6 +58,7 @@ export default defineNuxtConfig({
     'nuxt-icon',
     '@nuxt/image',
     '@vueuse/nuxt',
+    'nuxt-site-config',
     'nuxt-og-image',
     '@nuxt/content',
     '@nuxtjs/robots',
@@ -68,6 +69,17 @@ export default defineNuxtConfig({
     '@nuxtjs/i18n',
     'nuxt-gtag'
   ],
+  ogImage: {
+    // TEMPORARY: disabled because the satori renderer currently crashes on
+    // this machine's toolchain (nitropack/unenv resolution bug — nitro fails
+    // to load unenv/dist/runtime/runtime/mock/empty.mjs, a doubled path that
+    // doesn't exist). Confirmed as a known upstream nitro/unenv issue, not
+    // caused by any code in this repo. `enabled: false` keeps every
+    // defineOgImageComponent() call a safe no-op instead of removing them.
+    // Re-enable once nitropack/unenv/nuxt-og-image ship a compatible combo.
+    enabled: false,
+  },
+
   content: {
     markdown: {
       anchorLinks: false,
@@ -110,23 +122,43 @@ export default defineNuxtConfig({
         statusCode: 301,
       },
     },
+    // Travel section was folded into the About page — redirect every old
+    // travel URL (legacy non-prefixed and both locales) there.
     "/travel/dont-travel-to-israel-on-a-friday": {
-      redirect: {
-        to: "/en/travel/dont-travel-to-israel-on-a-friday",
-        statusCode: 301,
-      },
+      redirect: { to: "/en/about", statusCode: 301 },
     },
     "/travel/lessons-from-a-digital-nomad": {
-      redirect: {
-        to: "/en/travel/lessons-from-a-digital-nomad",
-        statusCode: 301,
-      },
+      redirect: { to: "/en/about", statusCode: 301 },
     },
     "/travel/proven-strategies-for-digitial-nomads": {
-      redirect: {
-        to: "/en/travel/proven-strategies-for-digitial-nomads",
-        statusCode: 301,
-      },
+      redirect: { to: "/en/about", statusCode: 301 },
+    },
+    "/travel": {
+      redirect: { to: "/en/about", statusCode: 301 },
+    },
+    "/en/travel": {
+      redirect: { to: "/en/about", statusCode: 301 },
+    },
+    "/es/travel": {
+      redirect: { to: "/es/about", statusCode: 301 },
+    },
+    "/en/travel/dont-travel-to-israel-on-a-friday": {
+      redirect: { to: "/en/about", statusCode: 301 },
+    },
+    "/es/travel/dont-travel-to-israel-on-a-friday": {
+      redirect: { to: "/es/about", statusCode: 301 },
+    },
+    "/en/travel/lessons-from-a-digital-nomad": {
+      redirect: { to: "/en/about", statusCode: 301 },
+    },
+    "/es/travel/lessons-from-a-digital-nomad": {
+      redirect: { to: "/es/about", statusCode: 301 },
+    },
+    "/en/travel/proven-strategies-for-digitial-nomads": {
+      redirect: { to: "/en/about", statusCode: 301 },
+    },
+    "/es/travel/proven-strategies-for-digitial-nomads": {
+      redirect: { to: "/es/about", statusCode: 301 },
     },
   },
 })

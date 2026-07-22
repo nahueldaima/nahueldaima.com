@@ -32,13 +32,6 @@ function toggleMenu() {
             </span>
           </NuxtLink>
         </li>
-        <li>
-          <NuxtLink :to="localePath('/travel')">
-            <span class="hover:scale-110 transition-all ease-out hover:cursor-pointer flex items-center">
-              {{ $t('travel.link') }}
-            </span>
-          </NuxtLink>
-        </li>
         <li title="About Me">
           <NuxtLink :to="localePath('/about')" aria-label="About me">
             <span class="hover:scale-110 transition-all ease-out hover:cursor-pointer flex items-center">
@@ -132,13 +125,6 @@ function toggleMenu() {
           <NuxtLink :to="localePath('/tech')" @click="toggleMenu">
             <span class="hover:scale-110 transition-all ease-out hover:cursor-pointer flex items-center">
               {{ $t('tech.link') }}
-            </span>
-          </NuxtLink>
-        </li>
-        <li>
-          <NuxtLink :to="localePath('/travel')" @click="toggleMenu">
-            <span class="hover:scale-110 transition-all ease-out hover:cursor-pointer flex items-center">
-              {{ $t('travel.link') }}
             </span>
           </NuxtLink>
         </li>

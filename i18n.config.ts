@@ -7,9 +7,9 @@ export default defineI18nConfig(() => ({
         link: 'Home',
         title: 'Hi! I’m Nahuel Daima',
         title2: 'Digital nomad and technology enthusiast',
-        description: 'Here you will find technical content about my experience in the software industry, along with exciting stories of adventures and lessons learned from my travels around the world. I hope you enjoy and feel inspired!',
+        description: 'Here you will find technical content and case studies from my experience in the software industry. I hope you enjoy and feel inspired!',
         button1: 'Explore Tech',
-        button2: 'Discover Adventures',
+        button2: 'About Me',
       },
       mycv: {
         link: 'My CV',
@@ -48,12 +48,6 @@ export default defineI18nConfig(() => ({
         metaDescription: 'Welcome to my tech blog.',
         metaContent: 'Welcome to my tech blog.',
       },
-      travel: {
-        link: 'Travel',
-        title: 'Travel Blog',
-        metaDescription: 'Welcome to my travel blog.',
-        metaContent: 'Welcome to my travel blog.',
-      },
       footerData: {
         quickLink: 'Quick Links',
         aboutAuthor: 'Hi! I am Nahuel!',
@@ -84,9 +78,9 @@ export default defineI18nConfig(() => ({
         link: 'Home',
         title: '¡Hola! Soy Nahuel Daima',
         title2: 'Nómada digital y entusiasta de la tecnología',
-        description: 'Aquí encontrarás contenido técnico sobre mi experiencia en la industria del software, junto con emocionantes historias de aventuras y lecciones aprendidas de mis viajes por todo el mundo. ¡Espero que disfrutes y te sientas inspirado!',
+        description: 'Aquí encontrarás contenido técnico y casos de estudio de mi experiencia en la industria del software. ¡Espero que disfrutes y te sientas inspirado!',
         button1: 'Explorar Tecnología',
-        button2: 'Descubre aventuras',
+        button2: 'Sobre mí',
       },
       mycv: {
         link: 'Mi CV',
@@ -128,12 +122,6 @@ export default defineI18nConfig(() => ({
         title: 'Tech Blog',
         metaDescription: 'Bienvenido a mi blog de tecnología.',
         metaContent: 'Bienvenido a mi blog de tecnología.',
-      },
-      travel: {
-        link: 'Viajes',
-        title: 'Blog de viajes',
-        metaDescription: 'Bienvenido a mi blog de viajes.',
-        metaContent: 'Bienvenido a mi blog de viajes.',
       },
       footerData: {
         quickLink: 'Links rápidos',

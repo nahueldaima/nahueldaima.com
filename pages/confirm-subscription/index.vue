@@ -18,7 +18,7 @@ function goHome() {
 
 // Generate OG Image
 defineOgImageComponent('About', {
-  headline: 'Tech and Travel Blog',
+  headline: 'Software Engineering & Leadership',
   title: 'Nahuel Daima',
   description: 'I’m a technology enthusiast and digital nomad with over a decade of experience in software',
   link: '/nahuel-daima-home-hero.jpg',

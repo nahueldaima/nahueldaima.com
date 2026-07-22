@@ -7,7 +7,7 @@ alt: 'Don''t Travel to Israel on a Friday - Nahuel Daima'
 ogImage: dont-travel-to-israel-on-a-friday-nahuel-daima.jpg
 tags: ['nomad', 'planner', 'journey']
 equivalent: 'dont-travel-to-israel-on-a-friday'
-published: true
+published: false
 ---
 
 I don't know much about the Jewish religion or its traditions. When I bought tickets to Israel, I was guided solely by the airline promotions, which had the cheapest travel day on a Friday. 

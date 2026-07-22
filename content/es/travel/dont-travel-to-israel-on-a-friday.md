@@ -7,7 +7,7 @@ alt: 'No viajes a Israel un viernes - Nahuel Daima'
 ogImage: dont-travel-to-israel-on-a-friday-nahuel-daima.jpg
 tags: ['nomad', 'planner', 'journey']
 equivalent: 'dont-travel-to-israel-on-a-friday'
-published: true
+published: false
 ---
 
 No conozco mucho sobre la religión judía, ni sus tradiciones. Cuando compré pasajes a Israel, solo me guié por las promociones de la aerolínea, cuyo día más económico para viajar era un viernes. Si todo salía bien, llegaría a Tel Aviv sobre la 1 PM, cogería algún transporte y llegaría a mi Airbnb en Jerusalén por la tarde. No fue el caso, moverse por Israel un viernes es un desastre, sin importar lo que digan los foros online.

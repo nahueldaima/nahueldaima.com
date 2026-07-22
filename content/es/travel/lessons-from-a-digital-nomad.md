@@ -7,7 +7,7 @@ alt: 'Lecciones de Nahuel Daima como Nómada Digital'
 ogImage: lessons-from-a-digital-nomad-nahuel-daima.jpg
 tags: ['nomad', 'thoughts']
 equivalent: 'lessons-from-a-digital-nomad'
-published: true
+published: false
 ---
 
 Todas mis pertenencias están guardadas en dos valijas en un depósito en Milán.

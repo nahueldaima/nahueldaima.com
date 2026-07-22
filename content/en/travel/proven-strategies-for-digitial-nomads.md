@@ -7,7 +7,7 @@ alt: 'Proven Strategies for Digital Nomads - Nahuel Daima'
 ogImage: proven-strategies-for-digitial-nomads-nahuel-daima.jpg
 tags: ['nomad', 'planner', 'journey']
 equivalent: 'proven-strategies-for-digitial-nomads'
-published: true
+published: false
 ---
 
 Being a digital nomad feels like a holiday, but travelling and working at the same time requires paying attention to details we usually overlook. 

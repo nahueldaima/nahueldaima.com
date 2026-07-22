@@ -25,7 +25,7 @@
           <NuxtLink :to="localePath('/tech')" class="mr-6">
             <generalButton>{{ $t('homePage.button1') }}</generalButton>
           </NuxtLink>
-          <NuxtLink :to="localePath('/travel')">
+          <NuxtLink :to="localePath('/about')">
             <generalButton>{{ $t('homePage.button2') }}</generalButton>
           </NuxtLink>
         </div>

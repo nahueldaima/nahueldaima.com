@@ -7,7 +7,7 @@ alt: 'Estrategias Probadas para Nómadas Digitales'
 ogImage: proven-strategies-for-digitial-nomads-nahuel-daima.jpg
 tags: ['nomad', 'planner', 'journey']
 equivalent: 'proven-strategies-for-digitial-nomads'
-published: true
+published: false
 ---
 
 Ser nómada digital se siente como vacaciones, pero viajar y trabajar a la vez requiere prestar atención a detalles que normalmente pasamos por alto.
