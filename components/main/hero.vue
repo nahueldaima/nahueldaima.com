@@ -1,3 +1,7 @@
+<script setup lang="ts">
+const localePath = useLocalePath()
+</script>
+
 <template>
   <div class="flex items-center justify-center mt-6 md:mt-0 md:h-[calc(100vh-100px)] w-full mb-8">
     <div class="grid grid-cols-1 sm:grid-cols-2 items-center w-full max-w-screen-xl">

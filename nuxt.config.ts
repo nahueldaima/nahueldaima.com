@@ -87,10 +87,11 @@ export default defineNuxtConfig({
   },
 
   i18n: {
+    restructureDir: false,
     baseUrl: 'https://nahueldaima.com',
     locales: [
-      { code: 'en', iso: 'en-GB', dir: 'ltr', name: 'English' },
-      { code: 'es', iso: 'es-ES', dir: 'ltr', name: 'Español' },
+      { code: 'en', language: 'en-GB', dir: 'ltr', name: 'English' },
+      { code: 'es', language: 'es-ES', dir: 'ltr', name: 'Español' },
     ],
     defaultLocale: 'en',
     strategy: 'prefix',
