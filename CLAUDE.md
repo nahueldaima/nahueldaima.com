@@ -36,6 +36,10 @@ There is no test suite in this repo.
 
 **Markdown authoring shortcut**: to open a link in the same tab from within content, use `<ProseA href="..." target="_self">text</ProseA>` (default Prose link behavior otherwise opens new tabs).
 
+## Deployment
+
+Pushing to `main` on GitHub (`origin`) auto-deploys to production (verified 2026-11-22). There is no CI config in the repo — the hosting provider builds from the Git hook, with the build command and publish dir (`dist/`) configured in its dashboard. `main` is the only branch, so every push to it goes live: run `npm run generate` locally first to make sure the build passes.
+
 ## Notes
 
 - `generateRSS.sh` is a standalone zsh script (not part of the npm scripts) that crawls the local sitemap output to regenerate `rss.xml` after content changes — run manually against a running `dev`/`preview` server if the RSS feed needs updating.

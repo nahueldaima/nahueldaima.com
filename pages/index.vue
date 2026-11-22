@@ -7,10 +7,6 @@ useHead({
       content:
         'Welcome To My Blog Site. Get Web Development, Javascript, Typescript, NodeJs, Vue, and Nuxt, Related Articles, Tips, Learning resources and more.',
     },
-    {
-      name: 'deploy-test',
-      content: '2026-11-22',
-    },
   ],
   titleTemplate: 'Nahuel Daima - %s',
 })
