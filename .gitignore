@@ -1,19 +1,10 @@
-# Nuxt dev/build outputs
-.output
-.nuxt
-# Node dependencies
 node_modules
-# System files
+.next
+out
 *.log
-
-# Local Netlify folder
-.netlify
-
-.editorconfig
+*.tsbuildinfo
+next-env.d.ts
 .env
-
-.netlify
-
+.env*.local
 .vscode
-
-dist
+.editorconfig

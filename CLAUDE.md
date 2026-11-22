@@ -4,43 +4,55 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## Project
 
-Nahuel Daima's personal website and blog — a Nuxt 3 (Vue 3) site statically generated and deployed as prerendered HTML. Content (tech articles, travel stories, CV/about) is authored in Markdown via `@nuxt/content`, with English and Spanish translations maintained as parallel files.
+Nahuel Daima's personal website and blog. It's a Next.js 15 (App Router, React 19, TypeScript, Tailwind 3) site where every page is prerendered to static HTML at build time and served by `next start`. Tech articles live as Markdown in `content/`, and the site keeps English and Spanish versions in parallel files. (The site was a Nuxt 3 app until the 2026-11 rewrite; that history is in git.)
 
 ## Commands
 
-- `npm run dev` — start the dev server (http://localhost:3000)
-- `npm run build` — production build (SSR-capable output)
-- `npm run generate` — static site generation to `dist/` (this is how the site is actually deployed — see `nitro.output.publicDir: 'dist'` in `nuxt.config.ts`)
-- `npm run preview` — preview a generated build
-- `npm run lint` / `npm run lint:fix` — ESLint via `@antfu/eslint-config` (config in `.eslintrc`; `content/**` is excluded from linting)
+- `npm run dev` starts the dev server at http://localhost:3000.
+- `npm run build` creates the production build. All routes must show as ○/● (static/SSG) in the output; a ƒ route means something became dynamic.
+- `npm start` runs the production server (`next start`, on `$PORT` or 3000).
+- `npm run lint` / `npm run lint:fix` run ESLint via `@antfu/eslint-config` (React). `content/**` and `lib/icons.generated.ts` are excluded.
+- `npm run icons` regenerates `lib/icons.generated.ts` after editing the icon list in `scripts/build-icons.mjs`.
 
-There is no test suite in this repo.
-
-## Architecture
-
-**Routing & content are coupled.** Blog content lives at `content/<locale>/<section>/<slug>.md` where `locale` is `en` or `es` and `section` is `tech` or `travel`. The file path *is* the URL: `content/en/tech/my-post.md` → `/en/tech/my-post`. Pages under `pages/tech/[_slug].vue`, `pages/travel/[_slug].vue`, and the catch-all `pages/[_slug].vue` / `pages/[...slug].vue` resolve content via `queryContent(route.path).findOne()` — there's no separate slug-to-file mapping to maintain.
-
-**i18n via `@nuxtjs/i18n`** with `strategy: 'prefix'` and locales `en`/`es` (default `en`). Route-level translated strings (UI copy, not blog content) live in `i18n.config.ts`. EN/ES blog posts are meant to be kept paired: same filename/slug in both `content/en/...` and `content/es/...`, cross-linked via the optional `equivalent` frontmatter field.
-
-**Required blog post frontmatter** (see any file under `content/`): `title`, `date` (ISO `YYYY-MM-DD`), `description`, `image`, `alt`, `ogImage`, `tags` (array), `published` (boolean). Body content should start headings at `##` (the `#`-level title is rendered separately by the page template). Images (`image`/`ogImage`) are typically full S3 URLs provided by the site owner, not local paths — see `providers/s3-provider.ts`, a custom `@nuxt/image` provider that resolves images against `IMAGES_BASE_URL`.
-
-**Full instructions for authoring/translating blog posts** (including required question flow and sitemap update steps) are in `.claude/AGENTS.md` — read it before creating or editing blog content.
-
-**SEO/OG data flow**: each content page (`pages/[_slug].vue`, `pages/tech/[_slug].vue`, etc.) builds a `BlogPost`-shaped object (`types/blog.ts`) from the queried content, feeds it into `useHead()` for meta/OG/Twitter tags and canonical link, and also calls `defineOgImageComponent` (via `nuxt-og-image`, rendered through `components/OgImage/About.vue`) to generate a social preview image. `public/sitemap.xml` is hand-maintained (via `@nuxtjs/sitemap`/manual edits) with `xhtml:link` alternates pairing each EN/ES post — new posts must be added here manually (see AGENTS.md workflow).
-
-**Legacy URL redirects** for old non-prefixed blog URLs are declared as `routeRules` in `nuxt.config.ts` (301 to the `/en/...` equivalent) — add new ones here if a post's path changes rather than breaking old links.
-
-**Component organization** under `components/` is by domain, not by page: `blog/` (article rendering, cards, TOC, header), `main/` (homepage sections: hero, recent, trending), `archive/` (list/hero for tech & travel index pages), `content/` (Prose overrides — `ProseA`, `ProseCode`, `ProseImg` — used to customize how `@nuxt/content` renders Markdown elements), `general/` (shared atoms: buttons, tags, dates, 404, consent popup), `footer/`, `i18n/` (language switcher), `comunity/` (ConvertKit newsletter signup form, paired with `plugins/formik.client.ts`).
-
-**Router scroll behavior** is customized in `app/router.options.ts` (smooth-scroll to hash anchors, e.g. `<NuxtLink to="#top">`).
-
-**Markdown authoring shortcut**: to open a link in the same tab from within content, use `<ProseA href="..." target="_self">text</ProseA>` (default Prose link behavior otherwise opens new tabs).
+There is no test suite. Verify changes by running `npm run build`, then `npm start` and curl or the browser.
 
 ## Deployment
 
-Pushing to `main` on GitHub (`origin`) auto-deploys to production (verified 2026-11-22). There is no CI config in the repo — the hosting provider builds from the Git hook, with the build command and publish dir (`dist/`) configured in its dashboard. `main` is the only branch, so every push to it goes live: run `npm run generate` locally first to make sure the build passes.
+Pushing to `main` on GitHub auto-deploys to production through **Coolify**.
 
-## Notes
+- **Build pack:** Nixpacks. It runs `npm ci`, then `npm run build`; the Start Command is `npm run start`, on port 3000.
+- **Domains:** nahueldaima.com and www.nahueldaima.com.
+- **Env vars** (set in Coolify, available at build and runtime):
+  - `IMAGES_BASE_URL`: the S3 bucket base for post images.
+  - `GOOGLE_ANALYTICS_ID`.
+- **Node version:** `engines.node` (22.x) pins it for Nixpacks.
+- **Downtime:** Coolify can't do rolling updates for this app, so each deploy has a few seconds of downtime.
+- **Before pushing:** run `npm run build` locally, because every push to `main` goes live.
 
-- `generateRSS.sh` is a standalone zsh script (not part of the npm scripts) that crawls the local sitemap output to regenerate `rss.xml` after content changes — run manually against a running `dev`/`preview` server if the RSS feed needs updating.
-- `_redirects` at the repo root handles a small number of static path blocks (`/wp-includes/*`, `/xmlrpc.php`, `/*/license.txt` → 404) at the hosting layer.
+## Architecture
+
+- **Routing:** everything lives under `app/[locale]/` (`en` | `es`), and `generateStaticParams` with `dynamicParams = false` makes every page static.
+  - `middleware.ts` redirects un-prefixed page URLs (`/`, `/about`…) to the visitor's language, using the `i18n_redirected` cookie and then `Accept-Language`.
+  - Unknown URLs render `app/global-not-found.tsx`, which shows the site layout and returns a real 404 status.
+- **Content:** files live at `content/<locale>/tech/<slug>.md`, and the file path is the URL (`/en/tech/<slug>`).
+  - `lib/content.ts` reads the files with gray-matter and renders them with unified (remark → rehype) at build time.
+  - Only `published: true` posts are built. Travel posts are kept in the repo but never built, and their old URLs redirect to /about.
+  - The custom rehype step ports the old Prose components:
+    - Links open in a new tab unless they set `target` (`<ProseA href="..." target="_self">` still works).
+    - Relative image paths resolve against `IMAGES_BASE_URL`.
+    - h2 headings feed the table of contents.
+- **EN/ES pairing:** use the same slug in both locales. The language switcher swaps `/en` ↔ `/es`, and hreflang alternates only list locales where the post exists.
+- **UI strings:** `messages/en.ts` and `messages/es.ts` hold them (es is typed against en, so keys must match). Read them with `getMessages(locale)` from `lib/i18n.ts`. Dates go through `formatDate()`, which outputs en `5/25/2019` and es `25/5/2019`.
+- **SEO:** each page's `generateMetadata` calls `pageMetadata()` in `lib/seo.ts`, which sets the title template "Nahuel Daima - %s", the canonical URL, hreflang, and OG/Twitter tags. Posts without `ogImage`/`image` get no og:image and a `summary` twitter card.
+  - `app/sitemap.ts` and `app/rss.xml/route.ts` are generated from the content at build time, so there's nothing to hand-edit.
+- **Redirects:** legacy URLs are 301s in `next.config.ts` `redirects()`. Add new ones there if a post's path changes.
+- **Components** are organized by domain:
+  - `layout/`: the `SiteShell` document, `Header`, theme, language switcher, consent and GA, ConvertKit.
+  - `home/`, `archive/` (cards), `blog/` (list, header, TOC), `footer/`, and `general/` (`Icon`, `Button`).
+  - Client components are marked `'use client'`; everything else renders on the server at build time.
+- **Images:** plain `<img>`. Local images live in `public/`, post images come from S3 via `imageUrl()` in `lib/images.ts`, and post cards without an image show a zinc gradient.
+- **Theme:** `next-themes` with the class strategy, dark by default. It keeps the old `nuxt-color-mode` storage key.
+
+## Blog posts
+
+Full instructions for authoring and translating posts are in `.claude/AGENTS.md`; read it before creating or editing blog content. The owner's post text and title must be used **verbatim**, with no corrections and no added headings.

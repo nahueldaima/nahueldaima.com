@@ -1,0 +1,13 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html.dark {
+  color-scheme: dark;
+}
+
+/* Smooth in-page anchor scrolling (table of contents), offset for the fixed header. */
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 100px;
+}

@@ -1,0 +1,75 @@
+// UI strings, ported verbatim from the Nuxt i18n.config.ts.
+const en = {
+  welcome: 'Welcome',
+  homePage: {
+    link: 'Home',
+    title: 'Hi! I’m Nahuel Daima',
+    title2: 'Digital nomad and technology enthusiast',
+    description: 'Here you will find technical content and case studies from my experience in the software industry. I hope you enjoy and feel inspired!',
+    button1: 'Explore Tech',
+    button2: 'About Me',
+  },
+  mycv: {
+    link: 'My CV',
+    title: 'NAHUEL DAIMA',
+    subtitle: 'CTO at Tookane: Logistics Management Software',
+    bio: 'I have extensive experience in leadership and development for startups, with a strong commitment to enhancing the projects I participate in. <br>My entrepreneurial spirit drives me to excel in team management, project leadership, sales, communication, and optimization of production processes, including ISO standards certification. <br>I enjoy and practice R&D+i daily in the projects I undertake. Today, programming has become my main passion!<br><br><b>Today, programming has become my main passion!</b>',
+    highlights: 'Highlights',
+    now: 'current date',
+    latestCompany: 'Tookane - Logistics Management Software',
+    latestPositionTitle: 'Chief Technology Officer at Tookane',
+    latestPositionDescription: 'Chief Technology Officer leading a multi-disciplinary team in the development and maintenance of a SaaS platform on AWS. Proficient in strategic decision-making, technology roadmap planning, and implementing agile methodologies to ensure robust, scalable solutions.',
+    previousPositionTitle: 'Tech Lead at Tookane',
+    previousPositionDescription: 'Leader of the development team, with experience in DevOps, software architecture, and CI/CD.',
+    previousPositionTitle2: 'Software Developer at Tookane',
+    previousPositionDescription2: 'Fullstack software developer, specializing in Node JS, Vue, and MongoDB.',
+    previousCompany: 'Y COMBINATOR: YC W17',
+    previousCompanyPositionTitle: 'STARTUP SCHOOL ONLINE',
+    previousCompanyPositionDescription: 'The Startup School is a free, 10-week massive open online course (MOOC) offered by Y Combinator. We believe the barrier to entry for people to start a startup is still too high. We want to make it easier for people to start a company, regardless of who they are or where they are, so we are beginning to share what we have learned through this course.',
+    previousCompany2: 'WALEETO | Personal Finance Management',
+    previousCompanyPositionTitle2: 'Founder',
+    previousCompanyPositionDescription2: 'Waleeto is an open source personal finance app designed for travelers who need to keep track of their transactions while moving around the world. The application is available via the web and on the Apple App Store. <br>Waleeto is not just another personal finance app; it is a revolution in how digital nomads manage their finances. It is designed to be a financial agent in a borderless life.',
+    previousCompany3: 'SHIFT METRICS | Data dashboards as a Service',
+    previousCompanyPositionTitle3: 'Founder',
+    previousCompanyPositionDescription3: 'SHIFT is an online service that allows businesses to be managed through real-time monitoring of the most relevant indicators for the company.<br>I created SHIFT with the concern that companies should be able to make better decisions by having the best information available in real time and not relying on a bi-weekly or monthly report with key indicators.<br>We want to be world leaders in Data as a Service for Ecommerce and Tech Startups.',
+    viewFullProfile: 'View Full Profile',
+  },
+  aboutPage: {
+    link: 'About me',
+    title: 'Passion, talent, and lots of Luck',
+    description: 'Hello! I’m Nahuel, a technology enthusiast and digital nomad with over a decade of experience in software.',
+    aboutMe: 'My journey began in 2014 when I was deeply involved in a personal project about coaching and management. This initiative led me to collaborate with a client who became my business mentor, pushing me to create a tech startup that revolutionized digital marketing indicator analysis.<br><br>Since that first venture, my career has evolved significantly. After facing and overcoming technical and business challenges, I embarked on the adventure of learning programming, which opened doors to new opportunities and horizons.<br><br>It was during a trip to Bali that I met my first digital nomads, individuals who combined their work with a passion for exploring the world. This experience planted the seed of a lifestyle that, years later, would become my reality.<br><br>In 2018, a decisive event marked my complete transition to remote work. During a meeting in the United States, Argentina drastically devalued its currency, affecting my business and leading me to seek stability in stronger economies like Europe and the United States.<br><br>This search led me to join Tookane (VTLAB), a Spanish company, where I started as a software developer and eventually grew to lead the technology and product area.<br><br>My philosophy of life and work centers on excellence, continuous learning, and mutual inspiration. I firmly believe in giving my best in every project and motivating my colleagues to grow and excel. On a personal level, I value constant growth, facing fears, and stepping out of my comfort zone to evolve and make a positive impact in every place I visit.<br><br>Traveling as a digital nomad is not without its challenges. I have learned to create a home in every destination, choosing places that challenge me rather than just traveling for the sake of it. I have faced the distance from loved ones, the transformation of intimate relationships, and adaptation to diverse cultures, overcoming obstacles of safety, health, and well-being.<br><br>For my daily work, my indispensable tools are my computer, a stand for ergonomic working positions, an external keyboard, a mouse, and my phone. Each new country and culture I discover brings valuable lessons and reinforces my love for diversity and learning.<br><br>If you are considering becoming a digital nomad, my advice is to prepare for uncertainty and solitude, but also for personal growth and a diversity of experiences.<br><br>Currently, I am working on a new product at Tookane that we envision will transform the relationship between retailers and their carriers. I have also started this personal blog to share my travel stories and technical knowledge, and I dream of visiting a hundred countries before I turn fifty.<br><br>I believe in the possibility of a better life through technology, where we have more time to dedicate to our passions without worrying about money. I am passionate about helping others become the best version of themselves, whether in the tech field or in the exciting life of a digital nomad.<br><br>Welcome to my blog! Join me on this borderless journey and let’s discover the world together.',
+  },
+  tech: {
+    link: 'Tech',
+    title: 'Tech Blog',
+    metaDescription: 'Welcome to my tech blog.',
+    metaContent: 'Welcome to my tech blog.',
+  },
+  footerData: {
+    quickLink: 'Quick Links',
+    aboutAuthor: 'Hi! I am Nahuel!',
+    connect: 'Connect With Me',
+    authorInterest: 'I have a fair amount of knowledge of Javascript, Typescript, VueJs, and Nuxt. If you have an interesting idea, either open source or paid let\'s connect.',
+    aboutTheSite: '',
+    copyRight: '© 2027 Nahuel Daima. All Rights Reserved.',
+  },
+  articles: {
+    search: 'Search',
+    tableOfContents: 'Table of contents',
+  },
+  cookies: {
+    title: 'Cookie Consent',
+    description: 'We use cookies to personalize content and ads, to provide social media features, and to analyze our traffic. Do you consent to the use of cookies for these purposes?',
+    deny: 'Deny',
+    accept: 'Accept',
+  },
+  confirmSubscription: {
+    title: 'Subscription confirmed',
+    description: 'Thank you for subscribing to my newsletter!',
+    button: 'Checkout the news!',
+  },
+}
+
+export default en
+export type Messages = typeof en

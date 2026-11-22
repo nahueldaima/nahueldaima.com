@@ -1,10 +1,10 @@
 
 # Nahuel Daima Personal Website
 
-![Nuxt.js](https://img.shields.io/badge/Nuxt.js-3.0.0-green.svg)
+![Next.js](https://img.shields.io/badge/Next.js-15-black.svg)
 ![License](https://img.shields.io/badge/License-MIT-blue.svg)
 
-Welcome to the repository for Nahuel Daima's personal website and blog, built with Nuxt.js.
+Welcome to the repository for Nahuel Daima's personal website and blog, built with Next.js and React.
 
 ## Table of Contents
 
@@ -19,17 +19,16 @@ Welcome to the repository for Nahuel Daima's personal website and blog, built wi
 
 ## About
 
-This project is the source code for my personal website and blog. It's built with Nuxt.js to provide a performant and scalable solution for sharing my experiences and thoughts as a technology enthusiast and digital nomad.
+This project is the source code for my personal website and blog. It's built with Next.js to provide a performant and scalable solution for sharing my experiences and thoughts as a technology enthusiast and digital nomad.
 
 ## Features
 
-- **Nuxt.js**: Server-side rendering, static site generation, and powerful configuration.
+- **Next.js (App Router) + React**: every page is prerendered to static HTML at build time.
 - **Tailwind CSS**: Utility-first CSS framework for rapid UI development.
-- **Content Module**: Easy content management with Markdown and JSON support.
-- **Internationalization**: Multi-language support with `@nuxtjs/i18n`.
-- **SEO Optimization**: Built-in SEO features and sitemap generation.
+- **Markdown content**: posts live in `content/<locale>/tech/<slug>.md`, rendered at build time.
+- **Internationalization**: English and Spanish under `/en` and `/es`.
+- **SEO Optimization**: per-page meta, hreflang alternates, and a generated sitemap and RSS feed.
 - **Responsive Design**: Fully responsive design for all devices.
-- **Social Sharing**: Integrated social sharing features.
 
 ## Installation
 
@@ -57,30 +56,20 @@ To start the development server, run:
 npm run dev
 ```
 
-To build the project for production, run:
+To build the project for production and run it, run:
 ```bash
 npm run build
-```
-
-To generate a static site, run:
-```bash
-npm run generate
-```
-
-To preview the generated static site, run:
-```bash
-npm run preview
+npm start
 ```
 
 ## Scripts
 
 - **`dev`**: Start the development server.
-- **`build`**: Build the project for production.
-- **`generate`**: Generate a static site.
-- **`preview`**: Preview the generated static site.
-- **`postinstall`**: Prepare Nuxt.js after installation.
+- **`build`**: Build the project for production (all pages prerendered).
+- **`start`**: Serve the production build on `$PORT` (default 3000).
 - **`lint`**: Run ESLint to check for linting errors.
 - **`lint:fix`**: Run ESLint and fix linting errors.
+- **`icons`**: Regenerate the bundled icon set after editing `scripts/build-icons.mjs`.
 
 ## Contributing
 

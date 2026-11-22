@@ -1,0 +1,75 @@
+import type { Messages } from './en'
+
+const es: Messages = {
+  welcome: 'Bienvenido',
+  homePage: {
+    link: 'Home',
+    title: '¡Hola! Soy Nahuel Daima',
+    title2: 'Nómada digital y entusiasta de la tecnología',
+    description: 'Aquí encontrarás contenido técnico y casos de estudio de mi experiencia en la industria del software. ¡Espero que disfrutes y te sientas inspirado!',
+    button1: 'Explorar Tecnología',
+    button2: 'Sobre mí',
+  },
+  mycv: {
+    link: 'Mi CV',
+    title: 'NAHUEL DAIMA',
+    subtitle: 'CTO en Tookane: Software de gestión logística',
+    bio: 'Tengo una amplia experiencia en Liderazgo y Desarrollo para empresas emergentes.<br><br>Soy flexible y con un fuerte compromiso a la potenciación de los proyectos en los cuales participo. Tengo un gran espíritu Emprendedor!<br><br>Aporto experiencia en el Manejo de equipos, Liderazgo de Proyectos, en Ventas, en Comunicación, en Optimización de procesos productivos, en Certificación de Normas ISO, entre otros.<br><br>Disfruto y practico a diario el I+D+i de los proyectos que llevo adelante.<br><br>Hoy la programación se ha vuelto mi principal pasión!',
+    highlights: 'Destacados',
+    now: 'fecha actual',
+    latestCompany: 'Tookane | Software de gestión logística',
+    latestPositionTitle: 'Director de Producto y Tecnología (CTO)',
+    latestPositionDescription: 'Director de Tecnología liderando un equipo multidisciplinario en el desarrollo y mantenimiento de una plataforma SaaS en AWS. Experto en la toma de decisiones estratégicas, planificación de hojas de ruta tecnológicas e implementación de metodologías ágiles para garantizar soluciones robustas y escalables.',
+    previousPositionTitle: 'Tech Lead',
+    previousPositionDescription: 'Líder del equipo de desarrollo, con experiencia en DevOps, arquitectura de software y CI/CD.',
+    previousPositionTitle2: 'Ingeniero en Software',
+    previousPositionDescription2: 'Desarrollador de software Fullstack, especializado en Node JS, Vue y MongoDB.',
+    previousCompany: 'Y COMBINATOR: YC W17',
+    previousCompanyPositionTitle: 'STARTUP SCHOOL ONLINE',
+    previousCompanyPositionDescription: 'La Escuela de Emprendedores es un curso masivo en línea gratuito de 10 semanas ofrecido por Y Combinator. Creemos que la barrera de entrada para que las personas inicien una startup sigue siendo demasiado alta. Queremos facilitar a las personas el inicio de una empresa, independientemente de quiénes sean o dónde se encuentren, por lo que comenzamos a compartir lo que hemos aprendido a través de este curso.',
+    previousCompany2: 'WALEETO | Finanzas personales',
+    previousCompanyPositionTitle2: 'Fundador',
+    previousCompanyPositionDescription2: 'Waleeto es una aplicación de finanzas personales de código abierto diseñada para viajeros que necesitan llevar un registro de sus transacciones mientras se desplazan por el mundo. La aplicación está disponible a través de la web y en la App Store de Apple. <br>Waleeto no es solo otra aplicación de finanzas personales; es una revolución en la forma en que los nómadas digitales gestionan sus finanzas. Está diseñado para ser un agente financiero en una vida sin fronteras.',
+    previousCompany3: 'SHIFT METRICS | Cuadros de mando de datos como servicio',
+    previousCompanyPositionTitle3: 'Fundador',
+    previousCompanyPositionDescription3: 'SHIFT es un servicio en línea que permite gestionar empresas a través del monitoreo en tiempo real de los indicadores más relevantes para la empresa.<br>Creé SHIFT con la preocupación de que las empresas deberían poder tomar mejores decisiones al tener la mejor información disponible en tiempo real y no depender de un informe quincenal o mensual con indicadores clave.<br>Queremos ser líderes mundiales en Datos como Servicio para Ecommerce y Startups Tecnológicas.',
+    viewFullProfile: 'Ver Perfil Completo',
+  },
+  aboutPage: {
+    link: 'Acerca de',
+    title: 'Pasión, talento y mucha suerte',
+    description: '¡Hola! Soy Nahuel, un apasionado de la tecnología y un nómada digital con más de una década de experiencia en software.',
+    aboutMe: 'Mi viaje comenzó en 2014, cuando estaba inmerso en un proyecto personal sobre coaching y management. Esta iniciativa me llevó a colaborar con un cliente que se convirtió en mi mentor empresarial, impulsándome a crear una startup tecnológica que revolucionara el análisis de indicadores de marketing digital.<br><br>Desde ese primer emprendimiento, mi carrera ha evolucionado significativamente. Después de enfrentar y superar desafíos técnicos y empresariales, me embarqué en la aventura de aprender programación, lo que me abrió puertas a nuevas oportunidades y horizontes.<br><br>Fue durante un viaje a Bali que conocí a mis primeros nómadas digitales, individuos que combinaban su trabajo con la pasión por explorar el mundo. Esta experiencia plantó en mí la semilla de un estilo de vida que, años más tarde, se convertiría en mi realidad.<br><br>En 2018, un evento decisivo marcó mi transición completa al trabajo remoto. Durante una reunión en Estados Unidos, Argentina devaluó su moneda drásticamente, afectando mi negocio y llevándome a buscar estabilidad en economías más sólidas como Europa y Estados Unidos.<br><br>Esta búsqueda me llevó a unirme a Tookane (VTLAB), una empresa española, donde comencé como desarrollador de software y, con el tiempo, crecí hasta liderar el área de tecnología y producto.<br><br>Mi filosofía de vida y trabajo se centra en la excelencia, el aprendizaje continuo y la inspiración mutua. Creo firmemente en ofrecer lo mejor de mí en cada proyecto y en motivar a mis colegas a crecer y superarse. En el ámbito personal, valoro el crecimiento constante, enfrentando miedos y saliendo de mi zona de confort para evolucionar y dejar un impacto positivo en cada lugar que visito.<br><br>Viajar como nómada digital no está exento de desafíos. He aprendido a crear un hogar en cada destino, eligiendo lugares desafiantes para mí y no simplemente viajando por el hecho de hacerlo. He enfrentado la distancia de seres queridos, la transformación de las relaciones más íntimas y la adaptación a diversas culturas, superando obstáculos de seguridad, salud y bienestar.<br><br>Para mi trabajo diario, mis herramientas indispensables son mi ordenador, un soporte para trabajar en una posición ergonómica, un teclado externo, un mouse y mi teléfono. Cada nuevo país y cultura que descubro me brinda lecciones valiosas y refuerza mi amor por la diversidad y el aprendizaje.<br><br>Si estás considerando convertirte en un nómada digital, mi consejo es prepararte para la incertidumbre y la soledad, pero también para el crecimiento personal y la diversidad de experiencias.<br><br>Actualmente, estoy trabajando en un nuevo producto en Tookane que imaginamos transformará la relación de los minoristas con sus transportistas. También he comenzado este blog personal para compartir mis historias de viaje y conocimientos técnicos, y tengo el sueño de visitar cien países antes de cumplir cincuenta años.<br><br>Creo en la posibilidad de una vida mejor gracias a la tecnología, en la que tengamos más tiempo para dedicarnos a nuestras pasiones sin preocuparnos por el dinero. Me apasiona ayudar a otros a convertirse en la mejor versión de sí mismos, ya sea en el ámbito tecnológico o en la emocionante vida de un nómada digital.<br><br>¡Bienvenido a mi blog! Acompáñame en este viaje sin fronteras y descubramos el mundo juntos.',
+  },
+  articles: {
+    search: 'Buscar',
+    tableOfContents: 'Tabla de contenidos',
+  },
+  tech: {
+    link: 'Tech',
+    title: 'Tech Blog',
+    metaDescription: 'Bienvenido a mi blog de tecnología.',
+    metaContent: 'Bienvenido a mi blog de tecnología.',
+  },
+  footerData: {
+    quickLink: 'Links rápidos',
+    aboutAuthor: 'Hola! Soy Nahuel!',
+    connect: 'Contactame',
+    authorInterest: 'Tengo un buen conocimiento de Javascript, VueJs y NodeJS. Si tienes una idea interesante, ya sea de código abierto o pagada, conectemos.',
+    aboutTheSite: '',
+    copyRight: '© 2027 Nahuel Daima. Todos los Derechos Reservados.',
+  },
+  cookies: {
+    title: 'Consentimiento de cookies',
+    description: 'Utilizamos cookies para personalizar contenido y anuncios, proporcionar funciones de redes sociales y analizar nuestro tráfico. ¿Consiente el uso de cookies para estos fines?',
+    deny: 'Rechazar',
+    accept: 'Aceptar',
+  },
+  confirmSubscription: {
+    title: 'Suscripción confirmada',
+    description: '¡Gracias por suscribirte a mi newsletter!',
+    button: '¡Revisa las novedades!',
+  },
+}
+
+export default es
