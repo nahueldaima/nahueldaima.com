@@ -20,6 +20,7 @@ export const CONVERTKIT_UID = { en: 'ba0d8bc4f0', es: '1b7a2eaa61' } as const
 
 /** Hand-picked case studies for the homepage. Add a tech post slug here to feature it. */
 export const CASE_STUDIES = [
+  'from-coding-paradise-to-code-review-hell',
   'scaling-your-infrastructure-at-low-cost-with-aws-lambdas',
 ]
 

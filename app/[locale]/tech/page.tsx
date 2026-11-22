@@ -26,6 +26,8 @@ export default async function TechPage({ params }: Props) {
     path: post.path,
     title: post.title,
     date: post.date,
+    description: post.description,
+    tags: post.tags,
     image: imageUrl(post.image),
     alt: post.alt,
   }))

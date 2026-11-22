@@ -27,6 +27,8 @@ export function SelectedWork({ locale }: { locale: Locale }) {
               path: post.path,
               title: post.title,
               date: post.date,
+              description: post.description,
+              tags: post.tags,
               image: imageUrl(post.image),
               alt: post.alt,
             }}

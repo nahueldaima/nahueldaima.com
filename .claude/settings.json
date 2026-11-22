@@ -1,0 +1,7 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(git merge --ff-only react-rewrite\\) Bash\\(git push origin main)"
+    ]
+  }
+}
