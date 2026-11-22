@@ -54,7 +54,7 @@ export default defineI18nConfig(() => ({
         connect: 'Connect With Me',
         authorInterest: 'I have a fair amount of knowledge of Javascript, Typescript, VueJs, and Nuxt. If you have an interesting idea, either open source or paid let\'s connect.',
         aboutTheSite: '',
-        copyRight: '© 2024 Nahuel Daima. All Rights Reserved.',
+        copyRight: '© 2027 Nahuel Daima. All Rights Reserved.',
       },
       articles: {
         search: 'Search',
@@ -129,7 +129,7 @@ export default defineI18nConfig(() => ({
         connect: 'Contactame',
         authorInterest: 'Tengo un buen conocimiento de Javascript, VueJs y NodeJS. Si tienes una idea interesante, ya sea de código abierto o pagada, conectemos.',
         aboutTheSite: '',
-        copyRight: '© 2024 Nahuel Daima. Todos los Derechos Reservados.',
+        copyRight: '© 2027 Nahuel Daima. Todos los Derechos Reservados.',
       },
       cookies: {
         title: 'Consentimiento de cookies',
