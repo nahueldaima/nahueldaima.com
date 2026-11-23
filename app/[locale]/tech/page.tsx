@@ -3,7 +3,6 @@ import { ArchiveHero } from '@/components/archive/ArchiveHero'
 import { ArticleList } from '@/components/blog/ArticleList'
 import { getPosts } from '@/lib/content'
 import { getMessages, toLocale } from '@/lib/i18n'
-import { imageUrl } from '@/lib/images'
 import { pageMetadata } from '@/lib/seo'
 
 interface Props { params: Promise<{ locale: string }> }
@@ -26,16 +25,13 @@ export default async function TechPage({ params }: Props) {
     path: post.path,
     title: post.title,
     date: post.date,
-    description: post.description,
     tags: post.tags,
-    image: imageUrl(post.image),
-    alt: post.alt,
   }))
 
   return (
     <div>
       <ArchiveHero title={t.tech.title} description={t.tech.metaDescription} />
-      <ArticleList posts={posts} locale={locale} searchPlaceholder={t.articles.search} />
+      <ArticleList posts={posts} locale={locale} searchPlaceholder={t.articles.search} noResults={t.articles.noResults} />
     </div>
   )
 }

@@ -56,6 +56,8 @@ const en = {
   },
   articles: {
     search: 'Search',
+    viewAll: 'View all',
+    noResults: 'No posts found',
     tableOfContents: 'Table of contents',
   },
   cookies: {

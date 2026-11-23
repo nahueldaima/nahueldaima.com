@@ -1,8 +1,8 @@
 import type { Locale } from '@/lib/i18n'
-import { ArchiveCard } from '@/components/archive/ArchiveCard'
-import { Icon } from '@/components/general/Icon'
+import Link from 'next/link'
+import { ArchiveCard, CardGrid } from '@/components/archive/ArchiveCard'
 import { getPostMeta } from '@/lib/content'
-import { imageUrl } from '@/lib/images'
+import { getMessages } from '@/lib/i18n'
 import { CASE_STUDIES } from '@/lib/site'
 
 export function SelectedWork({ locale }: { locale: Locale }) {
@@ -11,14 +11,16 @@ export function SelectedWork({ locale }: { locale: Locale }) {
     .filter(post => post !== null)
 
   return (
-    <div className="pb-10 px-4">
-      <div className="flex flex-row items-center space-x-3 pt-5 pb-3">
-        <Icon name="mdi:star-three-points-outline" size="2em" className="text-black dark:text-white" />
-        <h2 className="text-4xl font-semibold text-black dark:text-white">
+    <section className="pt-5 pb-16 px-4">
+      <div className="flex items-baseline justify-between pb-10">
+        <h2 className="font-content text-2xl text-black dark:text-white">
           Selected Work
         </h2>
+        <Link href={`/${locale}/tech`} className="font-content text-sm text-black dark:text-white hover:underline underline-offset-4">
+          {getMessages(locale).articles.viewAll}
+        </Link>
       </div>
-      <div className="grid grid-cols-1">
+      <CardGrid>
         {posts.map(post => (
           <ArchiveCard
             key={post.path}
@@ -27,14 +29,11 @@ export function SelectedWork({ locale }: { locale: Locale }) {
               path: post.path,
               title: post.title,
               date: post.date,
-              description: post.description,
               tags: post.tags,
-              image: imageUrl(post.image),
-              alt: post.alt,
             }}
           />
         ))}
-      </div>
-    </div>
+      </CardGrid>
+    </section>
   )
 }

@@ -43,6 +43,8 @@ const es: Messages = {
   },
   articles: {
     search: 'Buscar',
+    viewAll: 'Ver todo',
+    noResults: 'No se encontraron artículos',
     tableOfContents: 'Tabla de contenidos',
   },
   tech: {
