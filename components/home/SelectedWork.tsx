@@ -1,14 +1,11 @@
 import type { Locale } from '@/lib/i18n'
 import Link from 'next/link'
 import { ArchiveCard, CardGrid } from '@/components/archive/ArchiveCard'
-import { getPostMeta } from '@/lib/content'
+import { getPosts } from '@/lib/content'
 import { getMessages } from '@/lib/i18n'
-import { CASE_STUDIES } from '@/lib/site'
 
 export function SelectedWork({ locale }: { locale: Locale }) {
-  const posts = CASE_STUDIES
-    .map(slug => getPostMeta(locale, slug))
-    .filter(post => post !== null)
+  const posts = getPosts(locale).slice(0, 3)
 
   return (
     <section className="pt-5 pb-16 px-4">
